@@ -8,9 +8,9 @@
     --shade2: #ffffff;
 
     /* Picture Spacing */
-    --picH: 22.5%;
-    --picV: 4%;
-    --picP: 0% 15%;
+    --picH: 6.25cm;
+    --picV: 0.5cm;
+    --picP: 0% 20%;
 }
 
 /* Layout */
@@ -86,12 +86,12 @@ h2 {
 }
 
 h3 {
-    margin-top: 0.3cm;
-    margin-bottom: 0.3cm;
-    padding: 0;
-    font-size: 125%;
     text-transform: uppercase;
     letter-spacing: 0.1cm;
+    padding: 0cm;
+    margin-top: 0.3cm;
+    margin-bottom: 0.3cm;
+    font-size: 0.5cm;
 }
 
 .leftPanel h3 {
@@ -107,7 +107,7 @@ h3 {
 .lineSep {
     padding-bottom: 0.05cm;
     background-color: var(--shade2);
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 
 /* Links */
@@ -135,35 +135,32 @@ a {
 .edu .item {
     display: flex;
     flex-direction: column;
-    margin-top: 0.2cm;
-    margin-bottom: 0.3cm;
+    margin-top: 0.1cm;
+    margin-bottom: 0.2cm;
 }
 
 .edu .title {
     text-transform: capitalize;
-    padding: 0%;
-    font-size: 100%;
     background-color: var(--shade2);
     color: var(--shade1);
-    margin-bottom: 1%;
+    padding: 0.025cm;
+    margin-bottom: 0.1cm;
+    font-size: 0.45cm;
 }
 
 .edu .date {
     color: var(--col2);
-    font-size: 100%;
-    padding: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    padding: 0.025cm;
+    margin-bottom: 0.1cm;
+    font-size: 0.4cm;
 }
 
 .edu .disc {
     color: var(--shade2);
-    font-size: 100%;
-    padding: 0%;
-    margin-top: 0.05cm;
-    margin-bottom: 0.05cm;
+    padding: 0.025cm;
+    margin-bottom: 0.1cm;
+    font-size: 0.4cm;
 }
-
 
 /* Expertise */
 .expert {
@@ -176,37 +173,35 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    font-size: 100%;
+    font-size: 0.45cm;
 }
 
 .exp-item {
-    padding: 2%;
+    padding: 0.1cm;
     color: var(--col2);
 }
 
 /* Skills */
 .skill-lvl {
-    padding: 0%;
-    font-size: 100%;
     background-color: var(--shade2);
     color: var(--shade1);
-    margin-bottom: 1%;
+    padding: 0cm;
+    margin-bottom: 0.05cm;
+    font-size: 0.45cm;
 }
 
 .skill-line {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: left;
     justify-content: space-between;
-    margin-bottom: 2%;
-    font-size: 100%;
+    margin-bottom: 0.1cm;
+    font-size: 0.425cm;
 }
 
 .skill-item {
-    padding-left: 1%;
-    padding-right: 1%;
     color: var(--col2);
+    padding: 0cm;
 }
 
 /* Languages */
@@ -214,8 +209,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    font-size: 100%;
     color: var(--col2);
+    font-size: 0.45cm;
 }
 
 .lang-item {
@@ -239,53 +234,53 @@ a {
 /* --------------------------------- Right-Panel -------------------------------- */
 /* Name */
 .first {
-    font-size: 70%;
     font-weight: normal;
     letter-spacing: 0.25cm;
     text-transform: uppercase;
     color: var(--shade1);
+    font-size: 0.6cm;
 }
 
 .last {
-    font-size: 100%;
     font-weight: bold;
     letter-spacing: 0.5cm;
     text-transform: uppercase;
     color: var(--col1);
+    font-size: 0.75cm;
 }
 
 /* Label */
 .label {
-    font-size: 120%;
     font-weight: normal;
     letter-spacing: 0.1cm;
     color: var(--shade1);
+    font-size: 0.575cm;
 }
 
 /* Contacts */
 .contact {
-    padding: 0%;
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     background-color: var(--col1);
+    padding: 0cm;
 }
 
 .con-item {
-    padding: 1%;
     color: var(--col2);
-    font-size: small;
+    padding: 0.1cm;
+    font-size: 0.39cm;
 }
 
 /* Profile */
 .profile {
     width: 100%;
-    font-size: 100%;
     text-align: justify;
     color: var(--col1);
     margin-top: 0.2cm;
     margin-bottom: 0.2cm;
+    font-size: 0.45cm;
 }
 
 /* Work */
@@ -309,56 +304,56 @@ a {
 }
 
 .work .title {
-    font-size: large;
     font-weight: bold;
     text-transform: capitalize;
-    padding: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
     color: var(--col1);
+    padding: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    font-size: 0.5cm;
 }
 
 .work .date {
     color: var(--col1);
-    font-size: small;
     font-weight: bold;
-    padding: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    padding: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    font-size: 0.4cm;
 }
 
 .work .disc {
     color: var(--shade1);
-    font-size: 85%;
     font-weight: bold;
     font-style: italic;
-    padding: 0%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    padding: 0cm;
+    margin-top: 0.1cm;
+    margin-bottom: 0.1cm;
+    font-size: 0.45cm;
 }
 
 .work .high {
     color: var(--col1);
-    font-size: small;
-    padding: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    padding: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    font-size: 0.35cm;
 }
 
 .work .high>ul {
     list-style-type: disc;
-    padding: 0%;
-    margin-top: 0%;
-    margin-bottom: 0%;
+    padding: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
     padding-left: 0.5cm;
 }
 
 .work .high>ul>li {
-    padding-left: 0%;
-    line-height: 1.25;
+    padding-left: 0cm;
+    line-height: 0.45cm;
 }
 
 .work .high>ul>li::marker {
     color: var(--col1);
-    font-size: 100%;
+    font-size: 0.45cm;
 }
