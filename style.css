@@ -7,6 +7,28 @@
     --shade1: #333333;
     --shade2: #ffffff;
 
+    /* Font Style */
+    --font-family: "Roboto", sans-serif;
+    --font-weight: 400;
+
+    --font-name1: 0.6cm;
+    --font-name2: 0.75cm;
+    --font-label: 0.5cm;
+    --font-contact: 0.3cm;
+    --font-prof: 0.375cm;
+    --font-headings: 0.45cm;
+    --font-title: 0.425cm;
+    --font-date: 0.375cm;
+    --font-instit: 0.375cm;
+    --font-high: 0.325cm;
+    --font-space: 0.45cm;
+    --font-mark: 0.4cm;
+
+    --font-exps: 0.4cm;
+    --font-skill-lvl: 0.45cm;
+    --font-skill: 0.4cm;
+    --font-lang: 0.4cm;
+
     /* Picture Spacing */
     --picH: 6.25cm;
     --picV: 0.5cm;
@@ -19,6 +41,8 @@ body {
     width: 21cm;
     height: 29.7cm;
     margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
 }
 
 /* Printing */
@@ -71,7 +95,7 @@ page[size="A4"] {
     width: 100%;
     display: flex;
     flex-direction: column;
-  }
+}
 
 /* ---------------------- Design --------------------- */
 /* Headings */
@@ -91,7 +115,7 @@ h3 {
     padding: 0cm;
     margin-top: 0.3cm;
     margin-bottom: 0.3cm;
-    font-size: 0.5cm;
+    font-size: var(--font-headings);
 }
 
 .leftPanel h3 {
@@ -145,21 +169,21 @@ a {
     color: var(--shade1);
     padding: 0.025cm;
     margin-bottom: 0.1cm;
-    font-size: 0.45cm;
+    font-size: var(--font-title);
 }
 
 .edu .date {
     color: var(--col2);
     padding: 0.025cm;
     margin-bottom: 0.1cm;
-    font-size: 0.4cm;
+    font-size: var(--font-date);
 }
 
 .edu .disc {
     color: var(--shade2);
     padding: 0.025cm;
     margin-bottom: 0.1cm;
-    font-size: 0.4cm;
+    font-size: var(--font-instit);
 }
 
 /* Expertise */
@@ -173,12 +197,12 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: left;
-    font-size: 0.45cm;
+    font-size: var(--font-exps);
 }
 
 .exp-item {
-    padding: 0.1cm;
     color: var(--col2);
+    padding: 0.1cm;
 }
 
 /* Skills */
@@ -187,7 +211,7 @@ a {
     color: var(--shade1);
     padding: 0cm;
     margin-bottom: 0.05cm;
-    font-size: 0.45cm;
+    font-size: var(--font-skill-lvl);
 }
 
 .skill-line {
@@ -196,7 +220,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.1cm;
-    font-size: 0.425cm;
+    font-size: var(--font-skill);
 }
 
 .skill-item {
@@ -210,7 +234,7 @@ a {
     flex-direction: column;
     justify-content: left;
     color: var(--col2);
-    font-size: 0.45cm;
+    font-size: var(--font-lang);
 }
 
 .lang-item {
@@ -238,7 +262,7 @@ a {
     letter-spacing: 0.25cm;
     text-transform: uppercase;
     color: var(--shade1);
-    font-size: 0.6cm;
+    font-size: var(--font-name1);
 }
 
 .last {
@@ -246,7 +270,7 @@ a {
     letter-spacing: 0.5cm;
     text-transform: uppercase;
     color: var(--col1);
-    font-size: 0.75cm;
+    font-size: var(--font-name2);
 }
 
 /* Label */
@@ -254,7 +278,7 @@ a {
     font-weight: normal;
     letter-spacing: 0.1cm;
     color: var(--shade1);
-    font-size: 0.575cm;
+    font-size: var(--font-label);
 }
 
 /* Contacts */
@@ -270,7 +294,7 @@ a {
 .con-item {
     color: var(--col2);
     padding: 0.1cm;
-    font-size: 0.39cm;
+    font-size: var(--font-contact);
 }
 
 /* Profile */
@@ -280,7 +304,7 @@ a {
     color: var(--col1);
     margin-top: 0.2cm;
     margin-bottom: 0.2cm;
-    font-size: 0.45cm;
+    font-size: var(--font-prof);
 }
 
 /* Work */
@@ -310,7 +334,7 @@ a {
     padding: 0cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
-    font-size: 0.5cm;
+    font-size: var(--font-title);
 }
 
 .work .date {
@@ -319,7 +343,7 @@ a {
     padding: 0cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
-    font-size: 0.4cm;
+    font-size: var(--font-date);
 }
 
 .work .disc {
@@ -329,7 +353,7 @@ a {
     padding: 0cm;
     margin-top: 0.1cm;
     margin-bottom: 0.1cm;
-    font-size: 0.45cm;
+    font-size: var(--font-instit);
 }
 
 .work .high {
@@ -337,7 +361,7 @@ a {
     padding: 0cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
-    font-size: 0.35cm;
+    font-size: var(--font-high);
 }
 
 .work .high>ul {
@@ -350,10 +374,10 @@ a {
 
 .work .high>ul>li {
     padding-left: 0cm;
-    line-height: 0.45cm;
+    line-height: var(--font-space);
 }
 
 .work .high>ul>li::marker {
     color: var(--col1);
-    font-size: 0.45cm;
+    font-size: var(--font-mark);
 }
