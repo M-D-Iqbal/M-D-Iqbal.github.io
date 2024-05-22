@@ -1,0 +1,371 @@
+/* ---------------------- Variables -------------------- */
+:root {
+    /* Colors */
+
+    --col1: #333333;
+    --col2: #e5e5e5;
+    --shade1: #333333;
+    --shade2: #ffffff;
+
+    /* Picture Spacing */
+    --picH: 22.5%;
+    --picV: 4%;
+    --picP: 0% 15%;
+}
+
+/* Layout */
+body {
+    background: rgb(225, 225, 225);
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+}
+
+/* Printing */
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+}
+
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+@page {
+    size: 21cm 29.7cm;
+    padding: 0;
+    margin: 0mm;
+    border: none;
+    border-collapse: collapse;
+}
+
+/* End Printing */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.leftPanel {
+    width: 35%;
+    background-color: var(--col1);
+    padding: 0.5cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.05cm solid var(--col1);
+}
+
+.rightPanel {
+    width: 65%;
+    padding: 0.5cm;
+    border: 0.1cm solid var(--col1);
+}
+
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+/* ---------------------- Design --------------------- */
+/* Headings */
+h1 {
+    margin-top: 0.5cm;
+    margin-bottom: 0.2cm;
+}
+
+h2 {
+    margin-top: 0.1cm;
+    margin-bottom: 0.2cm;
+}
+
+h3 {
+    margin-top: 0.3cm;
+    margin-bottom: 0.3cm;
+    padding: 0;
+    font-size: 125%;
+    text-transform: uppercase;
+    letter-spacing: 0.1cm;
+}
+
+.leftPanel h3 {
+    color: var(--shade2);
+}
+
+.rightPanel h3 {
+    background-color: var(--col1);
+    color: var(--shade2);
+}
+
+/* Spacing */
+.lineSep {
+    padding-bottom: 0.05cm;
+    background-color: var(--shade2);
+    margin-bottom: 0.5cm;
+}
+
+/* Links */
+a {
+    text-decoration: none;
+    color: var(--col2);
+}
+
+/* Icons */
+i {
+    width: 0.5cm;
+    align-items: center;
+}
+
+/* --------------------------------- Left-Panel --------------------------------- */
+/* Picture */
+.profilePic {
+    width: 100%;
+    height: var(--picH);
+    margin-bottom: var(--picV);
+    object-position: var(--picP);
+    object-fit: cover;
+}
+
+/* Education */
+.edu {
+    width: 100%;
+    align-self: center;
+}
+
+.edu .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2cm;
+    margin-bottom: 0.3cm;
+}
+
+.edu .title {
+    text-transform: capitalize;
+    padding: 0%;
+    font-size: 110%;
+    background-color: var(--shade2);
+    color: var(--shade1);
+    margin-bottom: 1%;
+}
+
+.edu .date {
+    color: var(--col2);
+    font-size: 100%;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.edu .disc {
+    color: var(--shade2);
+    font-size: 100%;
+    padding: 0%;
+    margin-top: 0.05cm;
+    margin-bottom: 0.05cm;
+}
+
+
+/* Expertise */
+.expert {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.exp-line {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    font-size: 100%;
+}
+
+.exp-item {
+    padding: 2%;
+    color: var(--col2);
+}
+
+/* Skills */
+.skill-lvl {
+    padding: 0%;
+    font-size: 100%;
+    background-color: var(--shade2);
+    color: var(--shade1);
+    margin-bottom: 1%;
+}
+
+.skill-line {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    justify-content: space-between;
+    margin-bottom: 2%;
+    font-size: 100%;
+}
+
+.skill-item {
+    padding-left: 1%;
+    padding-right: 1%;
+    color: var(--col2);
+}
+
+/* Languages */
+.lang-line {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    font-size: 100%;
+    color: var(--col2);
+}
+
+.lang-item {
+    padding: 0.1cm;
+}
+
+/* Socials */
+.social {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: auto;
+}
+
+.social-item {
+    color: var(--shade2);
+}
+
+/* --------------------------------- Right-Panel -------------------------------- */
+/* Name */
+.first {
+    font-size: 70%;
+    font-weight: normal;
+    letter-spacing: 0.25cm;
+    text-transform: uppercase;
+    color: var(--shade1);
+}
+
+.last {
+    font-size: 100%;
+    font-weight: bold;
+    letter-spacing: 0.5cm;
+    text-transform: uppercase;
+    color: var(--col1);
+}
+
+/* Label */
+.label {
+    font-size: 120%;
+    font-weight: normal;
+    letter-spacing: 0.1cm;
+    color: var(--shade1);
+}
+
+/* Contacts */
+.contact {
+    padding: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--col1);
+}
+
+.con-item {
+    padding: 0.1cm;
+    color: var(--col2);
+    font-size: 85%;
+}
+
+/* Profile */
+.profile {
+    width: 100%;
+    font-size: 100%;
+    text-align: justify;
+    color: var(--col1);
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
+}
+
+/* Work */
+.work {
+    width: 100%;
+    align-self: center;
+}
+
+.work .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.2cm;
+    margin-bottom: 0.3cm;
+}
+
+.work .item-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+.work .title {
+    font-size: large;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    color: var(--col1);
+}
+
+.work .date {
+    color: var(--col1);
+    font-size: small;
+    font-weight: bold;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.work .disc {
+    color: var(--shade1);
+    font-size: 85%;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+
+.work .high {
+    color: var(--col1);
+    font-size: small;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+
+.work .high>ul {
+    list-style-type: disc;
+    padding: 0%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    padding-left: 0.5cm;
+}
+
+.work .high>ul>li {
+    padding-left: 0%;
+    line-height: 1.25;
+}
+
+.work .high>ul>li::marker {
+    color: var(--col1);
+    font-size: 100%;
+}
