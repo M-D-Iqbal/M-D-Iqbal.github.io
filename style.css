@@ -116,12 +116,6 @@ a {
     color: var(--col2);
 }
 
-/* Icons */
-i {
-    width: 0.5cm;
-    align-items: center;
-}
-
 /* --------------------------------- Left-Panel --------------------------------- */
 /* Picture */
 .profilePic {
@@ -280,9 +274,9 @@ i {
 }
 
 .con-item {
-    padding: 1%;
+    padding: 0%;
     color: var(--col2);
-    font-size: 0.3cm;
+    font-size: 0.2cm;
 }
 
 /* Profile */
