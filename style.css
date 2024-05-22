@@ -280,9 +280,9 @@ i {
 }
 
 .con-item {
-    padding: 0.1cm;
+    padding: 1%;
     color: var(--col2);
-    font-size: 85%;
+    font-size: 0.35cm;
 }
 
 /* Profile */
