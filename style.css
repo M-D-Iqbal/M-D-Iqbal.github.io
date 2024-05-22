@@ -276,7 +276,7 @@ a {
 .con-item {
     padding: 1%;
     color: var(--col2);
-    font-size: 90%;
+    font-size: small;
 }
 
 /* Profile */
