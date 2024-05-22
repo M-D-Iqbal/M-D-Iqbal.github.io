@@ -274,9 +274,9 @@ a {
 }
 
 .con-item {
-    padding: 0%;
+    padding: 1%;
     color: var(--col2);
-    font-size: 0.2cm;
+    font-size: 90%;
 }
 
 /* Profile */
