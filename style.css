@@ -11,28 +11,35 @@
     --font-family: "Roboto", sans-serif;
     --font-weight: 400;
 
-    --font-name1: 0.6cm;
-    --font-name2: 0.75cm;
+    --font-name1: 0.85cm;
+    --font-name2: 1cm;
+
     --font-label: 0.5cm;
+
     --font-contact: 0.35cm;
+
     --font-prof: 0.375cm;
+
     --font-headings: 0.45cm;
     --font-title: 0.425cm;
-    --font-date: 0.375cm;
-    --font-instit: 0.375cm;
+    --font-date: 0.4cm;
+    --font-instit: 0.35cm;
     --font-high: 0.325cm;
+
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
 
     --font-exps: 0.4cm;
+
     --font-skill-lvl: 0.45cm;
     --font-skill: 0.4cm;
-    --font-lang: 0.4cm;
+
+    --font-lang: 0.425cm;
 
     /* Picture Spacing */
-    --picH: 6.25cm;
-    --picV: 0.5cm;
-    --picP: 0% 20%;
+    --picH: 6cm;
+    --picV: 0.0cm;
+    --picP: 0% 15%;
 }
 
 /* Layout */
@@ -50,7 +57,7 @@ page {
     background: white;
     display: block;
     margin: 0 auto;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0cm;
 }
 
 page[size="A4"] {
@@ -78,7 +85,7 @@ page[size="A4"] {
 .leftPanel {
     width: 35%;
     background-color: var(--col1);
-    padding: 0.5cm;
+    padding: 0.4cm;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -87,7 +94,7 @@ page[size="A4"] {
 
 .rightPanel {
     width: 65%;
-    padding: 0.5cm;
+    padding: 0.4cm;
     border: 0.1cm solid var(--col1);
 }
 
@@ -99,20 +106,10 @@ page[size="A4"] {
 
 /* ---------------------- Design --------------------- */
 /* Headings */
-h1 {
-    margin-top: 0.5cm;
-    margin-bottom: 0.2cm;
-}
-
-h2 {
-    margin-top: 0.1cm;
-    margin-bottom: 0.2cm;
-}
-
 h3 {
     text-transform: uppercase;
     letter-spacing: 0.1cm;
-    padding: 0cm;
+    padding: 0.05cm;
     margin-top: 0.3cm;
     margin-bottom: 0.3cm;
     font-size: var(--font-headings);
@@ -131,15 +128,22 @@ h3 {
 .lineSep {
     padding-bottom: 0.05cm;
     background-color: var(--shade2);
-    margin-bottom: 0.3cm;
+    margin-bottom: 0.375cm;
 }
 
 /* Links */
 a {
     text-decoration: none;
-    color: var(--col2);
 }
 
+.leftPanel a{
+    color: var(--shade2);
+}
+
+
+.rightPanel a{
+    color: var(--shade1);
+}
 /* --------------------------------- Left-Panel --------------------------------- */
 /* Picture */
 .profilePic {
@@ -159,8 +163,8 @@ a {
 .edu .item {
     display: flex;
     flex-direction: column;
-    margin-top: 0.1cm;
-    margin-bottom: 0.2cm;
+    margin-top: 0.05cm;
+    margin-bottom: 0.25cm;
 }
 
 .edu .title {
@@ -175,14 +179,12 @@ a {
 .edu .date {
     color: var(--col2);
     padding: 0.025cm;
-    margin-bottom: 0.1cm;
     font-size: var(--font-date);
 }
 
 .edu .disc {
     color: var(--shade2);
     padding: 0.025cm;
-    margin-bottom: 0.1cm;
     font-size: var(--font-instit);
 }
 
@@ -251,18 +253,16 @@ a {
     margin-top: auto;
 }
 
-.social-item {
-    color: var(--shade2);
-}
-
 /* --------------------------------- Right-Panel -------------------------------- */
 /* Name */
-.first {
+.first{
     font-weight: normal;
     letter-spacing: 0.25cm;
     text-transform: uppercase;
     color: var(--shade1);
     font-size: var(--font-name1);
+    margin-top: 1cm;
+    margin-bottom: 0.2cm;
 }
 
 .last {
@@ -271,6 +271,8 @@ a {
     text-transform: uppercase;
     color: var(--col1);
     font-size: var(--font-name2);
+    margin-top: 0cm;
+    margin-bottom: 0.2cm;
 }
 
 /* Label */
@@ -279,6 +281,8 @@ a {
     letter-spacing: 0.1cm;
     color: var(--shade1);
     font-size: var(--font-label);
+    margin-top: 0.2cm;
+    margin-bottom: 0.1cm;
 }
 
 /* Contacts */
@@ -287,15 +291,17 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: var(--col1);
     padding: 0cm;
+    margin-top: 0.4cm;
+    margin-bottom: 0.425cm;
 }
 
 .con-item {
-    color: var(--col2);
+    color: var(--col1);
     padding: 0.1cm;
     font-size: var(--font-contact);
 }
+
 
 /* Profile */
 .profile {
@@ -349,7 +355,6 @@ a {
 .work .disc {
     color: var(--shade1);
     font-weight: bold;
-    font-style: italic;
     padding: 0cm;
     margin-top: 0.1cm;
     margin-bottom: 0.1cm;
@@ -381,3 +386,36 @@ a {
     color: var(--col1);
     font-size: var(--font-mark);
 }
+
+/* Publications */
+.pub {
+    width: 100%;
+    align-self: center;
+    color: var(--shade1);
+    font-size: var(--font-high);
+}
+
+.pub .item {
+    display: inline-block;
+    flex-direction: column;
+    margin-top: 0.1cm;
+    margin-bottom: 0.2cm;
+}
+
+.pub .aut {
+    font-weight: bold;
+}
+
+.pub .jour{
+    font-style: italic;
+}
+
+.pub .date {
+    font-weight: bold;
+}
+
+.pub .doi {
+    font-weight: bold;
+    font-style: italic;
+}
+
