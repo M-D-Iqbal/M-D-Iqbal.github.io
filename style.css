@@ -24,7 +24,9 @@
     --font-title: 0.425cm;
     --font-date: 0.4cm;
     --font-instit: 0.35cm;
-    --font-high: 0.325cm;
+
+    --font-high: 0.33cm;
+    --font-pub: 0.33cm;
 
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
@@ -392,7 +394,7 @@ a {
     width: 100%;
     align-self: center;
     color: var(--shade1);
-    font-size: var(--font-high);
+    font-size: var(--font-pub);
 }
 
 .pub .item {
