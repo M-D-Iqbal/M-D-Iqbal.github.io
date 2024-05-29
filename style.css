@@ -39,8 +39,7 @@
     --font-lang: 0.425cm;
 
     /* Picture Spacing */
-    --picH: 6cm;
-    --picV: 0.0cm;
+    --picH: 5.75cm;
     --picP: 0% 15%;
 }
 
@@ -152,8 +151,8 @@ a {
 .profilePic {
     width: 100%;
     height: var(--picH);
-    margin-bottom: var(--picV);
     object-position: var(--picP);
+    margin-top: 0.0cm;
     object-fit: cover;
 }
 
@@ -265,7 +264,7 @@ a {
     color: var(--shade1);
     font-size: var(--font-name1);
     margin-top: 0.5cm;
-    margin-bottom: 0.2cm;
+    margin-bottom: 0cm;
 }
 
 .last {
@@ -274,8 +273,8 @@ a {
     text-transform: uppercase;
     color: var(--col1);
     font-size: var(--font-name2);
-    margin-top: 0cm;
-    margin-bottom: 0.2cm;
+    margin-top: 0.25cm;
+    margin-bottom: 0cm;
 }
 
 /* Label */
@@ -284,8 +283,8 @@ a {
     letter-spacing: 0.1cm;
     color: var(--shade1);
     font-size: var(--font-label);
-    margin-top: 0.2cm;
-    margin-bottom: 0.1cm;
+    margin-top: 0.25cm;
+    margin-bottom: 0cm;
 }
 
 /* Contacts */
@@ -295,16 +294,14 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 0cm;
-    margin-top: 0.65cm;
-    margin-bottom: 0.625cm;
+    margin-top: 0.7cm;
+    margin-bottom: 0.725cm;
 }
 
 .con-item {
     color: var(--col1);
-    padding: 0.1cm;
     font-size: var(--font-contact);
 }
-
 
 /* Profile */
 .profile {
