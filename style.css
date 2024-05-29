@@ -91,7 +91,6 @@ page[size="A4"] {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 0.05cm solid var(--col1);
 }
 
 .rightPanel {
@@ -119,6 +118,8 @@ h3 {
 
 .leftPanel h3 {
     color: var(--shade2);
+    background-color: var(--shade2);
+    color: var(--col1);
 }
 
 .rightPanel h3 {
@@ -263,7 +264,7 @@ a {
     text-transform: uppercase;
     color: var(--shade1);
     font-size: var(--font-name1);
-    margin-top: 1cm;
+    margin-top: 0.5cm;
     margin-bottom: 0.2cm;
 }
 
@@ -294,8 +295,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 0cm;
-    margin-top: 0.4cm;
-    margin-bottom: 0.425cm;
+    margin-top: 0.65cm;
+    margin-bottom: 0.625cm;
 }
 
 .con-item {
