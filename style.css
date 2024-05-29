@@ -117,8 +117,8 @@ h3 {
 
 .leftPanel h3 {
     color: var(--shade2);
-    background-color: var(--shade2);
-    color: var(--col1);
+    /* background-color: var(--shade2);
+    color: var(--col1); */
 }
 
 .rightPanel h3 {
@@ -130,7 +130,7 @@ h3 {
 .lineSep {
     padding-bottom: 0.05cm;
     background-color: var(--shade2);
-    margin-bottom: 0.375cm;
+    margin-bottom: 0.4cm;
 }
 
 /* Links */
