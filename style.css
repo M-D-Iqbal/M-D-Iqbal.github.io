@@ -21,7 +21,7 @@
     --font-prof: 0.375cm;
 
     --font-headings: 0.45cm;
-    --font-title: 0.425cm;
+    --font-title: 0.4cm;
     --font-date: 0.4cm;
     --font-instit: 0.35cm;
 
@@ -84,7 +84,7 @@ page[size="A4"] {
 }
 
 .leftPanel {
-    width: 35%;
+    width: 31%;
     background-color: var(--col1);
     padding: 0.4cm;
     display: flex;
@@ -93,7 +93,7 @@ page[size="A4"] {
 }
 
 .rightPanel {
-    width: 65%;
+    width: 69%;
     padding: 0.4cm;
     border: 0.1cm solid var(--col1);
 }
