@@ -1,11 +1,15 @@
 /* ---------------------- Variables -------------------- */
 :root {
     /* Colors */
+    --pageCol: white;
+    --backCol: white;
+    --textCol: black;
 
-    --col1: #333333;
-    --col2: white;
+    --tempCol: #333333;
+    --headCol: #333333;
+    --bordCol: #333333;
 
-    --colChange: #333333;
+    --profCol: #333333;
 
     /* Font Style */
     --font-family: "Roboto", sans-serif;
@@ -45,7 +49,7 @@
 
 /* Layout */
 body {
-    background: rgb(225, 225, 225);
+    background: var(--pageCol);
     width: 21cm;
     height: 29.7cm;
     margin: 0 auto;
@@ -55,7 +59,7 @@ body {
 
 /* Printing */
 page {
-    background: white;
+    background: var(--pageCol);
     display: block;
     margin: 0 auto;
     margin-bottom: 0cm;
@@ -81,11 +85,12 @@ page[size="A4"] {
     flex-direction: row;
     width: 100%;
     height: 100%;
+    border: 0.1cm solid var(--bordCol);
 }
 
 .leftPanel {
     width: 31%;
-    background-color: var(--col1);
+    background-color: var(--tempCol);
     padding: 0.4cm;
     display: flex;
     flex-direction: column;
@@ -94,9 +99,9 @@ page[size="A4"] {
 
 .rightPanel {
     width: 69%;
-    background-color: var(--col2);
+    background-color: var(--pageCol);
     padding: 0.4cm;
-    border: 0.1cm solid var(--col1);
+    border-left: 0.1cm solid var(--bordCol);
 }
 
 .details {
@@ -117,18 +122,18 @@ h3 {
 }
 
 .leftPanel h3 {
-    color: var(--col2);
+    color: var(--backCol);
 }
 
 .rightPanel h3 {
-    background-color: var(--col1);
-    color: var(--col2);
+    background-color: var(--tempCol);
+    color: var(--backCol);
 }
 
 /* Spacing */
 .lineSep {
     padding-bottom: 0.05cm;
-    background-color: var(--col2);
+    background-color: var(--backCol);
     margin-bottom: 0.4cm;
 }
 
@@ -138,11 +143,11 @@ a {
 }
 
 .leftPanel a{
-    color: var(--col2);
+    color: var(--backCol);
 }
 
 .rightPanel a{
-    color: var(--col1);
+    color: var(--headCol);
 }
 /* --------------------------------- Left-Panel --------------------------------- */
 /* Picture */
@@ -169,21 +174,21 @@ a {
 
 .edu .title {
     text-transform: capitalize;
-    background-color: var(--col2);
-    color: var(--col1);
+    background-color: var(--backCol);
+    color: var(--tempCol);
     padding: 0.025cm;
     margin-bottom: 0.1cm;
     font-size: var(--font-title);
 }
 
 .edu .date {
-    color: var(--col2);
+    color: var(--backCol);
     padding: 0.025cm;
     font-size: var(--font-date);
 }
 
 .edu .disc {
-    color: var(--col2);
+    color: var(--backCol);
     padding: 0.025cm;
     font-size: var(--font-instit);
 }
@@ -203,14 +208,14 @@ a {
 }
 
 .exp-item {
-    color: var(--col2);
+    color: var(--backCol);
     padding: 0.1cm;
 }
 
 /* Skills */
 .skill-lvl {
-    background-color: var(--col2);
-    color: var(--col1);
+    background-color: var(--backCol);
+    color: var(--tempCol);
     padding: 0cm;
     margin-bottom: 0.05cm;
     font-size: var(--font-skill-lvl);
@@ -226,7 +231,7 @@ a {
 }
 
 .skill-item {
-    color: var(--col2);
+    color: var(--backCol);
     padding: 0cm;
 }
 
@@ -235,7 +240,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    color: var(--col2);
+    color: var(--backCol);
     font-size: var(--font-lang);
 }
 
@@ -259,7 +264,7 @@ a {
     font-weight: normal;
     letter-spacing: 0.25cm;
     text-transform: uppercase;
-    color: var(--col1);
+    color: var(--textCol);
     font-size: var(--font-name1);
     margin-top: 0.5cm;
     margin-bottom: 0cm;
@@ -269,7 +274,7 @@ a {
     font-weight: bold;
     letter-spacing: 0.5cm;
     text-transform: uppercase;
-    color: var(--col1);
+    color: var(--textCol);
     font-size: var(--font-name2);
     margin-top: 0.25cm;
     margin-bottom: 0cm;
@@ -282,7 +287,7 @@ a {
     font-size: var(--font-label);
     margin-top: 0.25cm;
     margin-bottom: 0cm;
-    color: var(--colChange);
+    color: var(--profCol);
 }
 
 /* Contacts */
@@ -297,18 +302,8 @@ a {
 }
 
 .con-item {
-    color: var(--col1);
+    color: var(--headCol);
     font-size: var(--font-contact);
-}
-
-/* Profile */
-.profile {
-    width: 100%;
-    text-align: justify;
-    color: var(--col1);
-    margin-top: 0.2cm;
-    margin-bottom: 0.2cm;
-    font-size: var(--font-prof);
 }
 
 /* Work */
@@ -334,7 +329,7 @@ a {
 .work .title {
     font-weight: bold;
     text-transform: capitalize;
-    color: var(--col1);
+    color: var(--headCol);
     padding: 0cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
@@ -342,7 +337,7 @@ a {
 }
 
 .work .date {
-    color: var(--col1);
+    color: var(--headCol);
     font-weight: bold;
     padding: 0cm;
     margin-top: 0cm;
@@ -351,7 +346,7 @@ a {
 }
 
 .work .disc {
-    color: var(--col1);
+    color: var(--headCol);
     font-weight: bold;
     padding: 0cm;
     margin-top: 0.1cm;
@@ -360,7 +355,7 @@ a {
 }
 
 .work .high {
-    color: var(--col1);
+    color: var(--txtCol);
     padding: 0cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
@@ -381,7 +376,7 @@ a {
 }
 
 .work .high>ul>li::marker {
-    color: var(--col1);
+    color: var(--tempCol);
     font-size: var(--font-mark);
 }
 
@@ -389,7 +384,7 @@ a {
 .pub {
     width: 100%;
     align-self: center;
-    color: var(--col1);
+    color: var(--txtCol);
     font-size: var(--font-pub);
 }
 
