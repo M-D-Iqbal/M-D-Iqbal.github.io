@@ -3,9 +3,9 @@
     /* Colors */
 
     --col1: #333333;
-    --col2: #e5e5e5;
-    --shade1: #333333;
-    --shade2: #ffffff;
+    --col2: white;
+
+    --colChange: #333333;;
 
     /* Font Style */
     --font-family: "Roboto", sans-serif;
@@ -94,6 +94,7 @@ page[size="A4"] {
 
 .rightPanel {
     width: 69%;
+    background-color: var(--col2);
     padding: 0.4cm;
     border: 0.1cm solid var(--col1);
 }
@@ -116,20 +117,18 @@ h3 {
 }
 
 .leftPanel h3 {
-    color: var(--shade2);
-    /* background-color: var(--shade2);
-    color: var(--col1); */
+    color: var(--col2);
 }
 
 .rightPanel h3 {
     background-color: var(--col1);
-    color: var(--shade2);
+    color: var(--col2);
 }
 
 /* Spacing */
 .lineSep {
     padding-bottom: 0.05cm;
-    background-color: var(--shade2);
+    background-color: var(--col2);
     margin-bottom: 0.4cm;
 }
 
@@ -139,12 +138,11 @@ a {
 }
 
 .leftPanel a{
-    color: var(--shade2);
+    color: var(--col2);
 }
 
-
 .rightPanel a{
-    color: var(--shade1);
+    color: var(--col1);
 }
 /* --------------------------------- Left-Panel --------------------------------- */
 /* Picture */
@@ -171,8 +169,8 @@ a {
 
 .edu .title {
     text-transform: capitalize;
-    background-color: var(--shade2);
-    color: var(--shade1);
+    background-color: var(--col2);
+    color: var(--col1);
     padding: 0.025cm;
     margin-bottom: 0.1cm;
     font-size: var(--font-title);
@@ -185,7 +183,7 @@ a {
 }
 
 .edu .disc {
-    color: var(--shade2);
+    color: var(--col2);
     padding: 0.025cm;
     font-size: var(--font-instit);
 }
@@ -211,8 +209,8 @@ a {
 
 /* Skills */
 .skill-lvl {
-    background-color: var(--shade2);
-    color: var(--shade1);
+    background-color: var(--col2);
+    color: var(--col1);
     padding: 0cm;
     margin-bottom: 0.05cm;
     font-size: var(--font-skill-lvl);
@@ -261,7 +259,7 @@ a {
     font-weight: normal;
     letter-spacing: 0.25cm;
     text-transform: uppercase;
-    color: var(--shade1);
+    color: var(--col1);
     font-size: var(--font-name1);
     margin-top: 0.5cm;
     margin-bottom: 0cm;
@@ -281,10 +279,10 @@ a {
 .label {
     font-weight: normal;
     letter-spacing: 0.1cm;
-    color: var(--shade1);
     font-size: var(--font-label);
     margin-top: 0.25cm;
     margin-bottom: 0cm;
+    color: var(--colChange);
 }
 
 /* Contacts */
@@ -353,7 +351,7 @@ a {
 }
 
 .work .disc {
-    color: var(--shade1);
+    color: var(--col1);
     font-weight: bold;
     padding: 0cm;
     margin-top: 0.1cm;
@@ -391,7 +389,7 @@ a {
 .pub {
     width: 100%;
     align-self: center;
-    color: var(--shade1);
+    color: var(--col1);
     font-size: var(--font-pub);
 }
 
