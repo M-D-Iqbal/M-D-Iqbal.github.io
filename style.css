@@ -25,9 +25,9 @@
     --font-prof: 0.375cm;
 
     --font-headings: 0.45cm;
-    --font-title: 0.4cm;
+    --font-title: 0.45cm;
     --font-date: 0.4cm;
-    --font-instit: 0.35cm;
+    --font-instit: 0.325cm;
 
     --font-high: 0.33cm;
     --font-pub: 0.33cm;
@@ -35,7 +35,7 @@
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
 
-    --font-exps: 0.4cm;
+    --font-exps: 0.425cm;
 
     --font-skill-lvl: 0.45cm;
     --font-skill: 0.4cm;
@@ -43,8 +43,9 @@
     --font-lang: 0.425cm;
 
     /* Picture Spacing */
-    --picH: 5.75cm;
-    --picP: 0% 15%;
+    --picH: 5.5cm;
+	--picF: 0% -20%;
+	--picR: 0%;
 }
 
 /* Layout */
@@ -88,7 +89,7 @@ page[size="A4"] {
 }
 
 .leftPanel {
-    width: 31%;
+    width: 35%;
     background-color: var(--tempCol);
     padding: 0.4cm;
     display: flex;
@@ -100,7 +101,7 @@ page[size="A4"] {
 }
 
 .rightPanel {
-    width: 69%;
+    width: 65%;
     background-color: var(--pageCol);
     padding: 0.4cm;
     border: 0.1cm solid var(--bordCol);
@@ -118,13 +119,15 @@ h3 {
     text-transform: uppercase;
     letter-spacing: 0.1cm;
     padding: 0.05cm;
+	padding-left:0.15cm;
     margin-top: 0.3cm;
     margin-bottom: 0.3cm;
     font-size: var(--font-headings);
 }
 
 .leftPanel h3 {
-    color: var(--backCol);
+	background-color: var(--backCol);
+    color: var(--tempCol);
 }
 
 .rightPanel h3 {
@@ -132,12 +135,6 @@ h3 {
     color: var(--backCol);
 }
 
-/* Spacing */
-.lineSep {
-    padding-bottom: 0.05cm;
-    background-color: var(--backCol);
-    margin-bottom: 0.4cm;
-}
 
 /* Links */
 a {
@@ -154,17 +151,22 @@ a {
 /* --------------------------------- Left-Panel --------------------------------- */
 /* Picture */
 .profilePic {
-    width: 100%;
-    height: var(--picH);
-    object-position: var(--picP);
-    margin-top: 0.0cm;
-    object-fit: cover;
+	width: 85%;
+	margin-top:-0.25cm;
+	object-fit: cover;
+	height: var(--picH);
+	border-radius: var(--picR);
+	object-position: var(--picF);
+	max-height:100%;
+	max-width:100%;
 }
 
 /* Education */
 .edu {
     width: 100%;
     align-self: center;
+	margin-top: 0.15cm;
+	margin-bottom: 0.15cm;
 }
 
 .edu .item {
@@ -175,12 +177,11 @@ a {
 }
 
 .edu .title {
-    text-transform: capitalize;
-    background-color: var(--backCol);
-    color: var(--tempCol);
+	font-weight: bold;
     padding: 0.025cm;
-    margin-bottom: 0.1cm;
+    margin-bottom: 0.05cm;
     font-size: var(--font-title);
+    color: var(--backCol);
 }
 
 .edu .date {
@@ -200,6 +201,8 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+	margin-top: 0.15cm;
+	margin-bottom: 0.15cm;
 }
 
 .exp-line {
@@ -215,9 +218,15 @@ a {
 }
 
 /* Skills */
+.skill {
+	margin-top: 0.15cm;
+	margin-bottom: 0.15cm;
+}
+
 .skill-lvl {
-    background-color: var(--backCol);
-    color: var(--tempCol);
+	letter-spacing: 0.05cm;
+	font-weight: bold;
+    color: var(--backCol);
     padding: 0cm;
     margin-bottom: 0.05cm;
     font-size: var(--font-skill-lvl);
@@ -228,22 +237,29 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 0.1cm;
+    margin-bottom: 0.25cm;
     font-size: var(--font-skill);
 }
 
 .skill-item {
-    color: var(--backCol);
-    padding: 0cm;
+	background-color: var(--backCol);
+    color: var(--tempCol);
+    padding: 0.05cm;
 }
 
 /* Languages */
+.lang {
+	margin-top: 0.15cm;
+	margin-bottom: 0.15cm;
+}
+
 .lang-line {
     display: flex;
     flex-direction: column;
     justify-content: left;
     color: var(--backCol);
     font-size: var(--font-lang);
+	margin-bottom: 0.25cm;
 }
 
 .lang-item {
@@ -268,13 +284,13 @@ a {
     text-transform: uppercase;
     color: var(--textCol);
     font-size: var(--font-name1);
-    margin-top: 0.5cm;
+    margin-top: 0.68cm;
     margin-bottom: 0cm;
 }
 
 .last {
     font-weight: bold;
-    letter-spacing: 0.5cm;
+    letter-spacing: 0.75cm;
     text-transform: uppercase;
     color: var(--textCol);
     font-size: var(--font-name2);
@@ -287,7 +303,7 @@ a {
     font-weight: normal;
     letter-spacing: 0.1cm;
     font-size: var(--font-label);
-    margin-top: 0.25cm;
+    margin-top: 0.5cm;
     margin-bottom: 0cm;
     color: var(--profCol);
 }
@@ -299,8 +315,8 @@ a {
     flex-direction: row;
     justify-content: space-between;
     padding: 0cm;
-    margin-top: 0.7cm;
-    margin-bottom: 0.725cm;
+    margin-top: 0.5cm;
+    margin-bottom: 0.25cm;
 }
 
 .con-item {
@@ -362,6 +378,8 @@ a {
     margin-top: 0cm;
     margin-bottom: 0cm;
     font-size: var(--font-high);
+    text-align: justify;
+    hyphens: auto;
 }
 
 .work .high>ul {
@@ -395,6 +413,8 @@ a {
     flex-direction: column;
     margin-top: 0.1cm;
     margin-bottom: 0.2cm;
+    text-align: justify;
+    hyphens: auto;
 }
 
 .pub .aut {
