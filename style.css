@@ -15,8 +15,8 @@
     --font-family: "Roboto", sans-serif;
     --font-weight: 400;
 
-    --font-name1: 0.85cm;
-    --font-name2: 1cm;
+    --font-name1: 0.65cm;
+    --font-name2: 0.75cm;
 
     --font-label: 0.5cm;
 
@@ -29,8 +29,8 @@
     --font-date: 0.4cm;
     --font-instit: 0.325cm;
 
-    --font-high: 0.33cm;
-    --font-pub: 0.33cm;
+    --font-high: 0.32cm;
+    --font-pub: 0.32cm;
 
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
@@ -43,8 +43,8 @@
     --font-lang: 0.425cm;
 
     /* Picture Spacing */
-    --picH: 5.5cm;
-	--picF: 0% -20%;
+    --picH: 5.025cm;
+	--picF: 0% -10%;
 	--picR: 0%;
 }
 
@@ -120,8 +120,8 @@ h3 {
     letter-spacing: 0.1cm;
     padding: 0.05cm;
 	padding-left:0.15cm;
-    margin-top: 0.3cm;
-    margin-bottom: 0.3cm;
+    margin-top: 0.2cm;
+    margin-bottom: 0.2cm;
     font-size: var(--font-headings);
 }
 
@@ -152,7 +152,7 @@ a {
 /* Picture */
 .profilePic {
 	width: 85%;
-	margin-top:-0.25cm;
+	margin-top:-0.5cm;
 	object-fit: cover;
 	height: var(--picH);
 	border-radius: var(--picR);
@@ -284,7 +284,7 @@ a {
     text-transform: uppercase;
     color: var(--textCol);
     font-size: var(--font-name1);
-    margin-top: 0.68cm;
+    margin-top: 0.5cm;
     margin-bottom: 0cm;
 }
 
