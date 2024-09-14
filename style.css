@@ -26,11 +26,11 @@
 
     --font-headings: 0.45cm;
     --font-title: 0.45cm;
-    --font-date: 0.4cm;
+    --font-date: 0.35cm;
     --font-instit: 0.325cm;
 
-    --font-high: 0.32cm;
-    --font-pub: 0.32cm;
+    --font-high: 0.325cm;
+    --font-pub: 0.315cm;
 
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
@@ -120,19 +120,20 @@ h3 {
     letter-spacing: 0.1cm;
     padding: 0.05cm;
 	padding-left:0.15cm;
-    margin-top: 0.2cm;
-    margin-bottom: 0.2cm;
+    margin-top: 0.3cm;
     font-size: var(--font-headings);
 }
 
 .leftPanel h3 {
 	background-color: var(--backCol);
     color: var(--tempCol);
+    margin-bottom: 0.3cm;
 }
 
 .rightPanel h3 {
     background-color: var(--tempCol);
     color: var(--backCol);
+    margin-bottom: 0cm;
 }
 
 
@@ -147,6 +148,7 @@ a {
 
 .rightPanel a{
     color: var(--headCol);
+    font-style: italic;
 }
 /* --------------------------------- Left-Panel --------------------------------- */
 /* Picture */
@@ -333,8 +335,8 @@ a {
 .work .item {
     display: flex;
     flex-direction: column;
-    margin-top: 0.2cm;
-    margin-bottom: 0.3cm;
+    margin-top: 0.5cm;
+    margin-bottom: 0.2cm;
 }
 
 .work .item-head {
@@ -406,13 +408,14 @@ a {
     align-self: center;
     color: var(--txtCol);
     font-size: var(--font-pub);
+    margin-top: 0.5cm;
 }
 
 .pub .item {
     display: inline-block;
     flex-direction: column;
-    margin-top: 0.1cm;
-    margin-bottom: 0.2cm;
+    margin-top: 0cm;
+    margin-bottom: 0.3cm;
     text-align: justify;
     hyphens: auto;
 }
@@ -421,16 +424,9 @@ a {
     font-weight: bold;
 }
 
-.pub .jour{
-    font-style: italic;
-}
 
 .pub .date {
     font-weight: bold;
 }
 
-.pub .doi {
-    font-weight: bold;
-    font-style: italic;
-}
 
