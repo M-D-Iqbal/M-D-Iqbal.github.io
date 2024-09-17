@@ -1,15 +1,18 @@
 /* ---------------------- Variables -------------------- */
 :root {
     /* Colors */
-    --pageCol: white;
-    --backCol: white;
-    --textCol: black;
+    --Lbg: #333333;
+    --Lheadbg: white;
+    --Lhead: #333333;
+    --Ltxt: white;
 
-    --tempCol: #333333;
-    --headCol: #333333;
-    --bordCol: #333333;
+    --Rbg: white;
+    --Rheadbg: #333333;
+    --Rhead: white;
+    --Rtxt: black;
 
-    --profCol: #333333;
+    --temp: #333333;
+    --bord: #333333;
 
     /* Font Style */
     --font-family: "Roboto", sans-serif;
@@ -17,257 +20,256 @@
 
     --font-name1: 0.65cm;
     --font-name2: 0.75cm;
-
     --font-label: 0.5cm;
-
     --font-contact: 0.35cm;
 
-    --font-prof: 0.375cm;
-
-    --font-headings: 0.45cm;
-    --font-title: 0.45cm;
-    --font-date: 0.35cm;
-    --font-instit: 0.325cm;
-
+    --font-head: 0.45cm;
+    --font-title: 0.4cm;
+    --font-disc: 0.4cm;
+    --font-date: 0.325cm;
     --font-high: 0.325cm;
-    --font-pub: 0.315cm;
 
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
 
-    --font-exps: 0.425cm;
+    --font-pub: 0.325cm;
 
-    --font-skill-lvl: 0.45cm;
-    --font-skill: 0.4cm;
-
-    --font-lang: 0.425cm;
+    --font-let: 0.325;
 
     /* Picture Spacing */
-    --picH: 5.025cm;
-	--picF: 0% -10%;
-	--picR: 0%;
-}
-
-/* Layout */
-body {
-    background: var(--pageCol);
-    width: 21cm;
-    height: 29.7cm;
-    margin: 0 auto;
-    font-family: var(--font-family);
-    font-weight: var(--font-weight);
-}
-
-/* Printing */
-page {
-    background: var(--pageCol);
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 0cm;
-}
-
-page[size="A4"] {
-    width: 21cm;
-    height: 29.7cm;
-}
-
-@page {
-    size: 21cm 29.7cm;
-    padding: 0;
-    margin: 0mm;
-    border: none;
-    border-collapse: collapse;
-}
-
-/* End Printing */
-
-.container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    height: 100%;
-}
-
-.leftPanel {
-    width: 35%;
-    background-color: var(--tempCol);
-    padding: 0.4cm;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-top: 0.1cm solid var(--bordCol);
-    border-left: 0.1cm solid var(--bordCol);
-    border-bottom: 0.1cm solid var(--bordCol);
-}
-
-.rightPanel {
-    width: 65%;
-    background-color: var(--pageCol);
-    padding: 0.4cm;
-    border: 0.1cm solid var(--bordCol);
-}
-
-.details {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+	--picW: 72%;
+    --picR: 5%;
 }
 
 /* ---------------------- Design --------------------- */
-/* Headings */
 h3 {
     text-transform: uppercase;
     letter-spacing: 0.1cm;
-    padding: 0.05cm;
-	padding-left:0.15cm;
-    margin-top: 0.3cm;
-    font-size: var(--font-headings);
-}
-
-.leftPanel h3 {
-	background-color: var(--backCol);
-    color: var(--tempCol);
-    margin-bottom: 0.3cm;
-}
-
-.rightPanel h3 {
-    background-color: var(--tempCol);
-    color: var(--backCol);
+    font-size: var(--font-head);
+    padding-top: 0.025cm;
+    padding-bottom: 0.025cm;
+    padding-left: 0.1cm;
+    margin-top: 0cm;
     margin-bottom: 0cm;
 }
-
-
-/* Links */
+.title {
+    font-weight: 500;
+    letter-spacing: 0.01cm;
+    font-size: var(--font-title);
+    margin-bottom: 0.02cm;
+}
+.disc {
+    font-size: var(--font-disc);
+    margin-bottom: 0.02cm;
+}
+.date {
+    font-size: var(--font-date);
+}
+.high {
+    color: var(--col2);
+    font-size: var(--font-high);
+    text-align: justify;
+    hyphens: auto;
+}
 a {
     text-decoration: none;
 }
 
+/* ---------------------- Style --------------------- */
+/* Left */
+.leftPanel h3 {
+    background-color: var(--Lheadbg);
+    color: var(--Lhead);
+}
+.leftPanel .title {
+    color: var(--Ltxt);
+}
+.leftPanel .disc {
+    color: var(--Ltxt);
+}
+.leftPanel .date {
+    color: var(--Ltxt);
+}
+.leftPanel .high {
+    color: var(--Ltxt);
+}
 .leftPanel a{
-    color: var(--backCol);
+    color: var(--Ltxt);
 }
 
+/* Right */
+.rightPanel h3 {
+    background-color: var(--Rheadbg);
+    color: var(--Rhead);
+}
+.rightPanel .title {
+    color: var(--Rtxt);
+}
+.rightPanel .disc {
+    color: var(--temp);
+}
+.rightPanel .date {
+    color: var(--Rtxt);
+}
+.rightPanel .high {
+    color: var(--Rtxt);
+}
 .rightPanel a{
-    color: var(--headCol);
+    color: var(--Rtxt);
     font-style: italic;
 }
-/* --------------------------------- Left-Panel --------------------------------- */
+
+/* General */
+.exp .title{
+    margin-bottom: 0.25cm;
+}
+.skill .disc{
+    background-color: var(--Lheadbg);
+    color: var(--Lhead);
+    padding: 0.05cm;
+}
+.lang .title{
+    margin-bottom: 0.25cm;
+}
+/* --------------------------------- Sections --------------------------------- */
+
 /* Picture */
 .profilePic {
-	width: 85%;
-	margin-top:-0.5cm;
-	object-fit: cover;
-	height: var(--picH);
+	width: var(--picW);
+    margin-left: auto;
+    margin-right: auto;
+	object-fit: fill;
 	border-radius: var(--picR);
-	object-position: var(--picF);
-	max-height:100%;
-	max-width:100%;
+}
+
+/* Personal */
+.first{
+    font-weight: normal;
+    letter-spacing: 0.15cm;
+    text-transform: uppercase;
+    color: var(--Rtxt);
+    font-size: var(--font-name1);
+    margin-top: 0.2cm;
+    margin-bottom: 0cm;
+}
+.last {
+    font-weight: bold;
+    letter-spacing: 0.25cm;
+    text-transform: uppercase;
+    color: var(--Rtxt);
+    font-size: var(--font-name2);
+    margin-top: 0.25cm;
+    margin-bottom: 0cm;
+}
+.label {
+    font-weight: normal;
+    letter-spacing: 0.05cm;
+    font-size: var(--font-label);
+    margin-top: 0.5cm;
+    margin-bottom: 0cm;
+    color: var(--temp);
+}
+.contact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0cm;
+    margin-top: 0.5cm;
+}
+.contact .item {
+    color: var(--Rtxt);
+    font-size: var(--font-contact);
+}
+
+.contact i{
+    color: var(--temp);
 }
 
 /* Education */
 .edu {
     width: 100%;
     align-self: center;
-	margin-top: 0.15cm;
-	margin-bottom: 0.15cm;
+    margin-bottom: 0.45cm;
 }
-
 .edu .item {
     display: flex;
     flex-direction: column;
-    margin-top: 0.05cm;
-    margin-bottom: 0.25cm;
+    margin-top: 0.3cm;
+    padding-left: 0.1cm;
 }
-
-.edu .title {
-	font-weight: bold;
-    padding: 0.025cm;
-    margin-bottom: 0.05cm;
-    font-size: var(--font-title);
-    color: var(--backCol);
+/* Work */
+.work {
+    width: 100%;
+    align-self: center;
+    margin-bottom: 0.45cm;
 }
-
-.edu .date {
-    color: var(--backCol);
-    padding: 0.025cm;
-    font-size: var(--font-date);
+.work .item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 0.3cm;
+    padding-left: 0.1cm;
 }
-
-.edu .disc {
-    color: var(--backCol);
-    padding: 0.025cm;
-    font-size: var(--font-instit);
+.work .item-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
 }
-
+.work .high>ul {
+    list-style-type: disc;
+    padding: 0cm;
+    margin-top: 0cm;
+    margin-bottom: 0cm;
+    padding-left: 0.5cm;
+}
+.work .high>ul>li {
+    padding-left: 0cm;
+    line-height: var(--font-space);
+}
+.work .high>ul>li::marker {
+    color: var(--Rtxt);
+    font-size: var(--font-mark);
+}
 /* Expertise */
-.expert {
+.exp {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-	margin-top: 0.15cm;
-	margin-bottom: 0.15cm;
+    margin-bottom: 0.45cm;
 }
-
-.exp-line {
-    display: flex;
-    flex-direction: row;
+.exp .item{
     justify-content: left;
-    font-size: var(--font-exps);
+    margin-top: 0.3cm;
+    padding-left: 0.1cm;
 }
-
-.exp-item {
-    color: var(--backCol);
-    padding: 0.1cm;
-}
-
 /* Skills */
-.skill {
-	margin-top: 0.15cm;
-	margin-bottom: 0.15cm;
+.skill {    
+    margin-bottom: 0.45cm;
 }
-
-.skill-lvl {
-	letter-spacing: 0.05cm;
-	font-weight: bold;
-    color: var(--backCol);
-    padding: 0cm;
-    margin-bottom: 0.05cm;
-    font-size: var(--font-skill-lvl);
+.skill .item {
+    margin-top: 0.3cm;
+    padding-left: 0.1cm;
 }
-
 .skill-line {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin-bottom: 0.25cm;
-    font-size: var(--font-skill);
 }
-
-.skill-item {
-	background-color: var(--backCol);
-    color: var(--tempCol);
-    padding: 0.05cm;
-}
-
 /* Languages */
 .lang {
-	margin-top: 0.15cm;
-	margin-bottom: 0.15cm;
+    margin-bottom: 0.45cm;
 }
-
-.lang-line {
+.lang .item {
     display: flex;
     flex-direction: column;
     justify-content: left;
-    color: var(--backCol);
     font-size: var(--font-lang);
-	margin-bottom: 0.25cm;
+    margin-top: 0.3cm;
+    padding-left: 0.1cm;
 }
-
-.lang-item {
-    padding: 0.1cm;
-}
-
 /* Socials */
 .social {
     width: 100%;
@@ -278,155 +280,175 @@ a {
     margin-top: auto;
 }
 
-/* --------------------------------- Right-Panel -------------------------------- */
-/* Name */
-.first{
-    font-weight: normal;
-    letter-spacing: 0.25cm;
-    text-transform: uppercase;
-    color: var(--textCol);
-    font-size: var(--font-name1);
-    margin-top: 0.5cm;
-    margin-bottom: 0cm;
-}
-
-.last {
-    font-weight: bold;
-    letter-spacing: 0.75cm;
-    text-transform: uppercase;
-    color: var(--textCol);
-    font-size: var(--font-name2);
-    margin-top: 0.25cm;
-    margin-bottom: 0cm;
-}
-
-/* Label */
-.label {
-    font-weight: normal;
-    letter-spacing: 0.1cm;
-    font-size: var(--font-label);
-    margin-top: 0.5cm;
-    margin-bottom: 0cm;
-    color: var(--profCol);
-}
-
-/* Contacts */
-.contact {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0cm;
-    margin-top: 0.5cm;
-    margin-bottom: 0.25cm;
-}
-
-.con-item {
-    color: var(--headCol);
-    font-size: var(--font-contact);
-}
-
-/* Work */
-.work {
-    width: 100%;
-    align-self: center;
-}
-
-.work .item {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.5cm;
-    margin-bottom: 0.2cm;
-}
-
-.work .item-head {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-}
-
-.work .title {
-    font-weight: bold;
-    text-transform: capitalize;
-    color: var(--headCol);
-    padding: 0cm;
-    margin-top: 0cm;
-    margin-bottom: 0cm;
-    font-size: var(--font-title);
-}
-
-.work .date {
-    color: var(--headCol);
-    font-weight: bold;
-    padding: 0cm;
-    margin-top: 0cm;
-    margin-bottom: 0cm;
-    font-size: var(--font-date);
-}
-
-.work .disc {
-    color: var(--headCol);
-    font-weight: bold;
-    padding: 0cm;
-    margin-top: 0.1cm;
-    margin-bottom: 0.1cm;
-    font-size: var(--font-instit);
-}
-
-.work .high {
-    color: var(--txtCol);
-    padding: 0cm;
-    margin-top: 0cm;
-    margin-bottom: 0cm;
-    font-size: var(--font-high);
-    text-align: justify;
-    hyphens: auto;
-}
-
-.work .high>ul {
-    list-style-type: disc;
-    padding: 0cm;
-    margin-top: 0cm;
-    margin-bottom: 0cm;
-    padding-left: 0.5cm;
-}
-
-.work .high>ul>li {
-    padding-left: 0cm;
-    line-height: var(--font-space);
-}
-
-.work .high>ul>li::marker {
-    color: var(--tempCol);
-    font-size: var(--font-mark);
-}
-
 /* Publications */
 .pub {
     width: 100%;
     align-self: center;
-    color: var(--txtCol);
-    font-size: var(--font-pub);
-    margin-top: 0.5cm;
 }
-
 .pub .item {
+    font-size: var(--font-pub);
+    color: var(--Rtxt);
     display: inline-block;
     flex-direction: column;
-    margin-top: 0cm;
-    margin-bottom: 0.3cm;
     text-align: justify;
     hyphens: auto;
+    margin-top: 0.3cm;
+    padding-left: 0.1cm;
 }
 
-.pub .aut {
+/* ---------------------- Layout -------------------- */
+/* Body */
+body {
+    background: white;
+    width: 21cm;
+    height: 29.7cm;
+    margin: 0 auto;
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+}
+/* Page */
+page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0cm;
+}
+page[size="A4"] {
+    width: 21cm;
+    height: 29.7cm;
+}
+@page {
+    size: 21cm 29.7cm;
+    padding: 0;
+    margin: 0mm;
+    border: none;
+    border-collapse: collapse;
+}
+
+/* ---------------------- Pannels-------------------- */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.head {
+    width: 100%;
+    height: 5.1cm;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.head-con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    border-top: 0.1cm solid var(--bord);
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    width: 21cm;
+    height: 24.6cm;
+}
+.leftPanel {
+    width: 36%;
+    padding: 0.4cm;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--Lbg);
+    border-right: 0.1cm solid var(--bord);
+    border-left: 0.1cm solid var(--bord);
+}
+.rightPanel {
+    width: 64%;
+    padding: 0.4cm;
+    background-color: var(--Rbg);
+    border-right: 0.1cm solid var(--bord);
+}
+.details {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ---------------------- CV -------------------- */
+.cv-con {
+    width: 100%;
+    height: 24.525cm;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 0.1cm solid var(--bord);
+}
+
+/* ---------------------- Letter -------------------- */
+.let-con {
+    width: 100%;
+    height: 24.45cm;
+    display: flex;
+    flex-direction: column;
+    border: 0.1cm solid var(--bord);
+}
+
+.letter {
+    margin-top: 0.75cm;
+    margin-right: 1cm;
+    margin-left: 1cm;
+    text-align: justify;
+    hyphens: auto;
+    font-size: var(--font-let);
+    line-height: var(--font-space);
+    color: var(--Rtxt);
+}
+
+.company {
+    height: 3.9cm;
+    width:  80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 0.2cm;
+    margin-left: 0.6cm;
+}
+.company .title {
+    letter-spacing: 0.05cm;
+    color: var(--Ltxt);
+}
+
+.subject{
+    margin-bottom: 0.5cm;
+    letter-spacing: 0.05cm;
+    font-size: var(--font-title);
     font-weight: bold;
+    color: var(--Rtxt);
 }
-
-
-.pub .date {
+.letter p{
+    margin-top: 0.225cm;
+    margin-bottom: 0.225cm;
+}
+.letter b {
+    color: var(--Rtxt);
+	font-weight: var(--font-weight);
+}
+.letter i {
+    color: var(--Rtxt);
+	font-weight: var(--font-weight);
+}
+.close {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.end {
+    margin-top: 0.5cm;
+    letter-spacing: 0.05cm;
+    font-size: var(--font-title);
     font-weight: bold;
+    color: var(--Rtxt);
 }
-
-
+.sign {
+    width: 6cm;
+}

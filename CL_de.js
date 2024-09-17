@@ -1,0 +1,17 @@
+document.getElementById("date1").innerHTML = "20.08.2024";
+document.getElementById("tit1").innerHTML = "Berechnungsingenieur";
+document.getElementById("tit2").innerHTML = "Berechnungsingenieur (123)";
+document.getElementById("tit3").innerHTML = "Berechnungsingenieur (123)";
+document.getElementById("comp1").innerHTML = "XYZ";
+document.getElementById("comp2").innerHTML = "XYZ Gmbh";
+document.getElementById("add1").innerHTML = "ABC 123";
+document.getElementById("add2").innerHTML = "3456, IJK";
+document.getElementById("add3").innerHTML = "Land";
+document.getElementById("cont1").innerHTML = "+49 - 123 456 789";
+document.getElementById("cont2").innerHTML = "xyz@contact.com";
+document.getElementById("person1").innerHTML = "Sehr geehrtes XYZ-Team";
+document.getElementById("source1").innerHTML = "StepStone";
+document.getElementById("skill1").innerHTML = "CAE, CAD";
+document.getElementById("skill2").innerHTML = "FEM";
+document.getElementById("skill3").innerHTML = "Ansys, Gmsh";
+document.getElementById("skill4").innerHTML = "ParaView";
