@@ -267,15 +267,22 @@ a {
 }
 /* Languages */
 .lang {
-    margin-bottom: 0.45cm;
-}
-.lang .item {
     display: flex;
     flex-direction: column;
-    justify-content: left;
-    font-size: var(--font-lang);
-    margin-top: 0.3cm;
+    margin-bottom: 0.45cm;
+}
+.lang .item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 0.1cm;
+	margin-top: 0.2cm;
+	letter-spacing: 0.02cm;
+	color: var(--Ltxt);
+    
+}
+.lang-line{
+    margin-top: 0.3cm;
 }
 /* Socials */
 .social {
