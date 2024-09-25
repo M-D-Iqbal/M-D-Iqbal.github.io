@@ -1,0 +1,71 @@
+{
+    "basics":
+    {
+        "date":     "25.09.2024",
+        "company":  "XYZ",
+        "source":   "Indeed",
+        "contact":  
+        [
+            "XYZ Gmbh",
+            "ABC 123",
+            "3456, IJK",
+            "Land",
+            "+49 - 123 456 789",
+            "xyz@contact.com"
+        ]
+    },
+
+    "dataEn":
+    {
+        "label": 
+        [
+            "Computational Engineer",
+            "Computational Engineer (123)"
+        ],
+    
+        "expert": [
+            "Multi-Physics Problems",
+            "Numerical Methods",
+            "Structure Mechanics",
+            "Fracture Mechanics",
+            "Engineering Materials"
+        ], 
+
+        "skill": [
+            "CAD, FEM", 
+            "CFD", 
+            "Ansys, Gmsh", 
+            "ParaView"
+        ],
+
+        "person": "Dear XYZ-Team"
+            
+    },
+
+    "dataDe":
+    {
+        "label":
+        [
+            "Berechnungsingenieur",
+            "Berechnungsingenieur (123)"
+        ],
+
+        "expert": 
+        [
+            "Multiphysik-Probleme",
+            "Numerische Methoden",
+            "Strukturmechanik",
+            "Bruchmechanik",
+            "Ingenieur-Werkstoffe" 
+        ],   
+
+        "skill": [
+            "CAD, FEM", 
+            "CFD", 
+            "Ansys, Gmsh", 
+            "ParaView"
+        ],
+
+        "person": "Sehr geehrtes XYZ-Team"
+    } 
+}

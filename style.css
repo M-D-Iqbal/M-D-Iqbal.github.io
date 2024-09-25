@@ -235,13 +235,20 @@ a {
 .exp {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     margin-bottom: 0.45cm;
 }
 .exp .item{
-    justify-content: left;
-    margin-top: 0.3cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding-left: 0.1cm;
+	margin-top: 0.2cm;
+	letter-spacing: 0.02cm;
+	color: var(--Ltxt);
+    
+}
+.exp-line{
+    margin-top: 0.3cm;
 }
 /* Skills */
 .skill {    
@@ -404,7 +411,7 @@ page[size="A4"] {
 }
 
 .company {
-    height: 3.85cm;
+    height: 3.8cm;
     width:  80%;
 	display: flex;
 	flex-direction: column;
