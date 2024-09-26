@@ -24,9 +24,9 @@
     --font-contact: 0.35cm;
 
     --font-head: 0.45cm;
-    --font-title: 0.4cm;
+    --font-title: 0.425cm;
     --font-disc: 0.4cm;
-    --font-date: 0.325cm;
+    --font-date: 0.35cm;
     --font-high: 0.325cm;
 
     --font-space: 0.45cm;
@@ -53,10 +53,10 @@ h3 {
     margin-bottom: 0cm;
 }
 .title {
-    font-weight: 500;
-    letter-spacing: 0.01cm;
+    font-weight: 400;
+    letter-spacing: 0.02cm;
     font-size: var(--font-title);
-    margin-bottom: 0.02cm;
+    margin-bottom: 0.03cm;
 }
 .disc {
     font-size: var(--font-disc);
@@ -81,6 +81,9 @@ a {
     background-color: var(--Lheadbg);
     color: var(--Lhead);
 }
+.leftPanel .line {
+    color: var(--Ltxt);
+}
 .leftPanel .title {
     color: var(--Ltxt);
 }
@@ -96,11 +99,13 @@ a {
 .leftPanel a{
     color: var(--Ltxt);
 }
-
 /* Right */
 .rightPanel h3 {
     background-color: var(--Rheadbg);
     color: var(--Rhead);
+}
+.rightPanel .line {
+    color: var(--Rtxt);
 }
 .rightPanel .title {
     color: var(--Rtxt);
@@ -119,18 +124,6 @@ a {
     font-style: italic;
 }
 
-/* General */
-.exp .title{
-    margin-bottom: 0.25cm;
-}
-.skill .disc{
-    background-color: var(--Lheadbg);
-    color: var(--Lhead);
-    padding: 0.05cm;
-}
-.lang .title{
-    margin-bottom: 0.25cm;
-}
 /* --------------------------------- Sections --------------------------------- */
 
 /* Picture */
@@ -186,104 +179,45 @@ a {
     color: var(--temp);
 }
 
-/* Education */
-.edu {
+/* Section */
+.section {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.45cm;
+    margin-bottom: 0.5cm;
 }
-.edu .item {
+.section .item {
     display: flex;
     flex-direction: column;
     margin-top: 0.3cm;
     padding-left: 0.1cm;
 }
-/* Work */
-.work {
-    width: 100%;
-    align-self: center;
-    margin-bottom: 0.45cm;
-}
-.work .item {
-    display: flex;
-    flex-direction: column;
-    margin-top: 0.3cm;
-    padding-left: 0.1cm;
-}
-.work .item-head {
+.section .line {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: baseline;
 }
-.work .high>ul {
+.section .high>ul {
     list-style-type: disc;
     padding: 0cm;
     margin-top: 0cm;
     margin-bottom: 0cm;
     padding-left: 0.5cm;
 }
-.work .high>ul>li {
+.section .high>ul>li {
     padding-left: 0cm;
     line-height: var(--font-space);
 }
-.work .high>ul>li::marker {
+.section .high>ul>li::marker {
     color: var(--Rtxt);
     font-size: var(--font-mark);
 }
-/* Expertise */
-.exp {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.45cm;
+.section .special{
+    background-color: var(--Lheadbg);
+    color: var(--Lhead);
+    padding: 0.05cm;
 }
-.exp .item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 0.1cm;
-	margin-top: 0.2cm;
-	letter-spacing: 0.02cm;
-	color: var(--Ltxt);
-    
-}
-.exp-line{
-    margin-top: 0.3cm;
-}
-/* Skills */
-.skill {    
-    margin-bottom: 0.45cm;
-}
-.skill .item {
-    margin-top: 0.3cm;
-    padding-left: 0.1cm;
-}
-.skill-line {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 0.25cm;
-}
-/* Languages */
-.lang {
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 0.45cm;
-}
-.lang .item{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 0.1cm;
-	margin-top: 0.2cm;
-	letter-spacing: 0.02cm;
-	color: var(--Ltxt);
-    
-}
-.lang-line{
-    margin-top: 0.3cm;
-}
+
 /* Socials */
 .social {
     width: 100%;
@@ -292,22 +226,6 @@ a {
     align-items: center;
     justify-content: space-evenly;
     margin-top: auto;
-}
-
-/* Publications */
-.pub {
-    width: 100%;
-    align-self: center;
-}
-.pub .item {
-    font-size: var(--font-pub);
-    color: var(--Rtxt);
-    display: inline-block;
-    flex-direction: column;
-    text-align: justify;
-    hyphens: auto;
-    margin-top: 0.3cm;
-    padding-left: 0.1cm;
 }
 
 /* ---------------------- Layout -------------------- */
@@ -406,17 +324,6 @@ page[size="A4"] {
     border: 0.1cm solid var(--bord);
 }
 
-.letter {
-    margin-top: 0.75cm;
-    margin-right: 1cm;
-    margin-left: 1cm;
-    text-align: justify;
-    hyphens: auto;
-    font-size: var(--font-let);
-    line-height: var(--font-space);
-    color: var(--Rtxt);
-}
-
 .company {
     height: 3.8cm;
     width:  80%;
@@ -430,7 +337,18 @@ page[size="A4"] {
     color: var(--Ltxt);
 }
 
-.subject{
+.letter {
+    margin-top: 0.75cm;
+    margin-right: 1cm;
+    margin-left: 1cm;
+    text-align: justify;
+    hyphens: auto;
+    font-size: var(--font-let);
+    line-height: var(--font-space);
+    color: var(--Rtxt);
+}
+
+.letter  .subject{
     margin-bottom: 0.5cm;
     letter-spacing: 0.05cm;
     font-size: var(--font-title);
@@ -449,19 +367,19 @@ page[size="A4"] {
     color: var(--Rtxt);
 	font-weight: var(--font-weight);
 }
-.close {
+.letter .close {
     width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
-.end {
+.letter .end {
     margin-top: 0.5cm;
     letter-spacing: 0.05cm;
     font-size: var(--font-title);
     font-weight: bold;
     color: var(--Rtxt);
 }
-.sign {
+.letter .sign {
     width: 6cm;
 }

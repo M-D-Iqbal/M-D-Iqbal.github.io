@@ -25,7 +25,7 @@ fetch(file)
             exp.innerHTML = '';
             curData.expert.forEach(function(expertise) {
                 let expertiseDiv = document.createElement('div'); 
-                expertiseDiv.classList.add('exp-line'); 
+                expertiseDiv.classList.add('title');
                 expertiseDiv.innerHTML = expertise; 
                 exp.appendChild(expertiseDiv); 
             });
