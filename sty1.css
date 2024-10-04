@@ -21,181 +21,134 @@
     --font-name1: 0.6cm;
     --font-name2: 0.7cm;
     --font-label: 0.5cm;
-    --font-contact: 0.35cm;
+    --font-contact: 0.375cm;
 
     --font-head: 0.45cm;
     --font-list: 0.425cm;
     --font-title: 0.4cm;
-    --font-org: 0.375cm;
+    --font-org: 0.4cm;
     --font-date: 0.375cm;
-    --font-high: 0.35cm;
+    --font-high: 0.365cm;
+    --font-key: 0.2cm;
 
     --font-space: 0.45cm;
     --font-mark: 0.4cm;
+	
+    --font-pub: 0.365cm;
+    --font-let: 0.425cm;
+	
+	--pad-m: 0.5cm;
+    --pad-i: 0.25cm;
 
-    --font-pub: 0.325cm;
 
-    --font-let: 0.4cm;
-
-    /* Picture Spacing */
-	--picW: 72%;
+    /* Picture Spacing */;
     --picR: 5%;
 }
 
 /* ---------------------- Layout -------------------- */
-/* Body */
 body {
-    background: white;
-    width: 21cm;
-    height: 29.7cm;
     margin: 0 auto;
-    font-family: var(--font-family);
+    padding:0 auto;
+    background: white;
+    justify-content: center;
     font-weight: var(--font-weight);
-}
-/* Page */
-page {
-    background: white;
-    display: block;
-    margin: 0 auto;
-    margin-bottom: 0cm;
 }
 page[size="A4"] {
     width: 21cm;
     height: 29.7cm;
+    margin: 0 auto;
+    padding:0 auto;
+}
+page {
+    background: white;
+    display: block;
+    page-break-after: always;
 }
 @page {
     size: 21cm 29.7cm;
-    padding: 0;
-    margin: 0mm;
+    margin: 0 auto;
     border: none;
     border-collapse: collapse;
-}
-/* Panel */
-.leftside {
-    width: 36%;
-    padding: 0.4cm;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--Lbg);
-    border-right: 0.1cm solid var(--bord);
-    border-left: 0.1cm solid var(--bord);
-}
-.rightside {
-    width: 64%;
-    padding: 0.4cm;
-    background-color: var(--Rbg);
-    border-right: 0.1cm solid var(--bord);
 }
 
 /* Header */
 .header {
     width: 100%;
-    height: 5.1cm;
+    height: 4.5cm;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     border-top: 0.1cm solid var(--bord);
 }
 
-/* CV */
+/* Content */
 .content {
+    width: 100%;
+    height: 25cm;
     display: flex;
     flex-direction: row;
+}
+
+/* CV */
+.cv {
     width: 100%;
-    height: 24.4cm;
-    border-bottom: 0.1cm solid var(--bord);
-}
-
-/* Picture */
-.profilePic {
-	width: var(--picW);
-    margin-left: auto;
-    margin-right: auto;
-	object-fit: fill;
-	border-radius: var(--picR);
-}
-
-/* Bio */
-.bio{
-    height: 5.1cm;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.basics{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-.name{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.first{
-    font-weight: normal;
-    letter-spacing: 0.15cm;
-    text-transform: uppercase;
-    color: var(--Rtxt);
-    font-size: var(--font-name1);
-    margin-top: -0.5cm;
-    margin-bottom: 0.25cm;
-}
-.last {
-    font-weight: bold;
-    letter-spacing: 0.25cm;
-    text-transform: uppercase;
-    color: var(--Rtxt);
-    font-size: var(--font-name2);
-    margin-top: 0cm;
-    margin-bottom: 0.3cm;
-}
-.label {
-    font-weight: normal;
-    letter-spacing: 0.05cm;
-    font-size: var(--font-label);
-    margin-top: 0cm;
-    margin-bottom: 0.3cm;
-    color: var(--temp);
-}
-.contact {
-    width: 100%;
+    height: 25.05cm;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-	margin-top: 0.175cm;
-    padding: 0cm;
+	border-bottom: 0.1cm solid var(--bord);
+	
 }
-.contact .item {
-    color: var(--Rtxt);
-    font-size: var(--font-contact);
+
+/* CL */
+.cl {
+    width: 100%;
+    height: 24.95cm;
+    display: flex;
+    flex-direction: column;
+	border: 0.1cm solid var(--bord);
 }
-.contact i{
-    color: var(--temp);
+
+/* Panel */
+.leftside {
+    width: 34%;
+    height: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color: var(--Lbg);
+	padding-left: var(--pad-m);
+	padding-right: var(--pad-m);
 }
+.rightside {
+    width: 66%;
+    height: 100%;
+	display: flex;
+    flex-direction: column;
+    background-color: var(--Rbg);
+	border-right: 0.1cm solid var(--bord);
+	padding-left: var(--pad-m);
+	padding-right: var(--pad-m);
+}
+
 
 /* Headings */
 .head {
     text-transform: uppercase;
     letter-spacing: 0.1cm;
     font-size: var(--font-head);
-    padding-top: 0.025cm;
-    padding-bottom: 0.025cm;
-    padding-left: 0.1cm;
-    margin-top: 0.1cm;
-    margin-bottom: 0.3cm;
+	margin-top: 0.4cm;
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
 }
+
 .title {
-    font-weight: 400;
-    letter-spacing: 0.02cm;
+    letter-spacing: 0.0225cm;
     font-size: var(--font-title);
-    margin-bottom: 0.05cm;
+	margin-bottom: 0.05cm;
 }
 .org {
     font-size: var(--font-org);
-    margin-bottom: 0.05cm;
+	margin-bottom: 0.05cm;
 }
 .date {
     font-size: var(--font-date);
@@ -209,24 +162,114 @@ a {
     text-decoration: none;
 }
 
+/* ------------- Content ---------------- */
+
+/* Picture */
+.profilePic {
+	display: block;
+	height: 4cm;
+	width: auto;
+	margin: auto;
+	margin-top:0.25cm;
+	margin-bottom:0.25cm;
+	border-radius: var(--picR);
+}
+
+/* Bio */
+.bio{
+	height: 3.5cm;
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+	margin-top: 0.5cm;
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+}
+.basics{
+    display: flex;
+    flex-direction: row;
+	justify-content: space-between;
+}
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.first{
+    font-weight: normal;
+	text-transform: uppercase;
+    letter-spacing: 0.15cm;
+	font-size: var(--font-name1);
+    color: var(--Rtxt);
+}
+.last {
+    font-weight: bold;
+    letter-spacing: 0.25cm;
+    text-transform: uppercase;
+	font-size: var(--font-name2);
+    color: var(--Rtxt);
+	margin-top: 0.2cm;
+}
+.label {
+    font-weight: normal;
+    letter-spacing: 0.05cm;
+    font-size: var(--font-label);
+    color: var(--temp);
+	margin-top: 0.3cm;
+}
+/* Keywords */
+.Key {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+	font-size: var(--font-key);
+    color: var(--Ltxt);
+}
+.Key .item {
+	margin-top: 0cm;
+	margin-bottom:0cm;
+}
+
+/* Contact */
+.contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+	margin-top: 0.3cm;
+}
+.contact .item {
+    color: var(--Rtxt);
+    font-size: var(--font-contact);
+}
+.contact i{
+    color: var(--temp);
+}
+
 /* Education */
 .Edu {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.3cm;
+    margin-bottom: 0.5cm;
 }
 .Edu .item{
-    margin-bottom: 0.2cm;
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+	margin-top: 0.25cm;
+	margin-top: 0.25cm;
 }
 
 /* Work */
 .Wor {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.3cm;
+    margin-bottom: 0.5cm;
 }
 .Wor .item{
-    margin-bottom: 0.2cm;
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+	margin-top: 0.25cm;
+	margin-top: 0.25cm;
 }
 .Wor .lvl-0 {
     display: flex;
@@ -254,35 +297,44 @@ a {
 .Exp {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.3cm;
+    margin-bottom: 0.5cm;
 }
 .Exp .item{
-    margin-bottom: 0.2cm;
     color: var(--Ltxt);
     font-size: var(--font-list);
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+	margin-top: 0.25cm;
+	margin-top: 0.25cm;
 }
 
 /* Skills */
 .Ski {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.3cm;
+    margin-bottom: 0.5cm;
 }
 .Ski .item{
-    margin-bottom: 0.2cm;
     color: var(--Ltxt);
     font-size: var(--font-list);
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+	margin-top: 0.25cm;
+	margin-top: 0.25cm;
 }
 .Ski ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding-left: 0cm;
+	justify-content: space-between;
+	margin-top: 0.1cm;
+	margin-bottom: 0.1cm;
+    padding: 0cm;
 }
 .Ski ul li {
-    padding: 0.05cm;
     background-color: var(--Lheadbg);
     color: var(--Lhead);
+	padding: 0.05cm;
+	font-size: var(--font-org);
 }
 .Ski ul>li::marker {
     font-size: 0;
@@ -292,14 +344,17 @@ a {
 .Lan {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.3cm;
+    margin-bottom: 0.5cm;
 }
 .Lan .item{
     display: flex;
     flex-direction: row;
-    margin-bottom: 0.2cm;
     color: var(--Ltxt);
     font-size: var(--font-list);
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+	margin-top: 0.25cm;
+	margin-top: 0.25cm;
 }
 .Lan .language{
     padding-right: 0.2cm;
@@ -309,67 +364,60 @@ a {
 .Pub {
     width: 100%;
     align-self: center;
+    margin-bottom: 0.5cm;
 }
 .Pub .item{
-    margin-top: 0.35cm;
     color: var(--Rtxt);
     font-size: var(--font-pub);
     text-align: justify;
     hyphens: auto;
+	padding-left: var(--pad-i);
+	padding-right: var(--pad-i);
+	margin-top: 0.4cm;
+	margin-top: 0.4cm;
 }
 
 /* Socials */
 .Social {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+	width: 100%;
+	display: flex;
+    flex-direction: row;    
     justify-content: space-evenly;
-    margin-top: auto;
+	margin-top: auto;
+	margin-bottom: 0.2cm;
 }
 
 /* ---------------------- Letter --------------------- */
 /* Company */
 .company {
-    height: 3.675cm;
-    width:  80%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-	align-items: left;
-	margin-left:0.6cm;
-	margin-top:0.4cm;
-	letter-spacing: 0.05cm;
-    color: var(--Ltxt);
-}
-
-/* CL */
-.letter {
-    width: 100%;
-    height: 24.4cm;
+	height: 3.5cm;
     display: flex;
     flex-direction: column;
-    border-right: 0.1cm solid var(--bord);
-    border-left: 0.1cm solid var(--bord);
-    border-top: 0.1cm solid var(--bord);
+	justify-content: space-between;
+	margin-top: 0.5cm;
+	letter-spacing: 0.05cm;
+    color: var(--Ltxt);
+	padding-left: 0.6cm;
 }
 
-/* Letter */
-.letter  .subject{
-    padding-left: 1cm;
-    margin-top: 0.75cm;
+/* Subject */
+.subject{
+	margin-top: 0.75cm;
     letter-spacing: 0.05cm;
     font-size: var(--font-title);
     font-weight: bold;
     color: var(--Rtxt);
+	padding-left:1cm;
+	padding-right:0.75cm;
 }
 
+/* Letter Content */
 .let-cont {
     margin-top: 0.5cm;
-    margin-right: 1cm;
-    margin-left: 1cm;
     text-align: justify;
     hyphens: auto;
+	padding-left:1cm;
+	padding-right:0.75cm;
 }
 
 .let-cont p{
@@ -389,11 +437,11 @@ a {
 }
 .close {
     margin-top: 0.3cm;
-    margin-left: 1cm;
-    margin-right: 2cm;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+	padding-left:1cm;
+	padding-right:0.75cm;
 }
 
 .close .NameCityDate{
@@ -405,7 +453,7 @@ a {
 }
 
 .SignPic {
-    width: 6cm;
+    width: 7.5cm;
 }
 
 /* ---------------------- Colors --------------------- */
@@ -442,6 +490,7 @@ a {
 }
 .rightside .title {
     color: var(--Rtxt);
+    font-weight: bold;
 }
 .rightside .org {
     color: var(--temp);
@@ -456,6 +505,3 @@ a {
     color: var(--Rtxt);
     font-style: italic;
 }
-
-
-
