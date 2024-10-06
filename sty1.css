@@ -1,5 +1,9 @@
 /* ---------------------- Variables -------------------- */
 :root {
+    /* Font Style */
+    --font-family: "Tinos", serif;
+    --font-weight: 400;
+
     /* Colors */
     --Lbg: #333333;
     --Lheadbg: white;
@@ -13,10 +17,6 @@
 
     --temp: #333333;
     --bord: #333333;
-
-    /* Font Style */
-    --font-family: "Roboto", sans-serif;
-    --font-weight: 400;
 
     --font-name1: 0.6cm;
     --font-name2: 0.7cm;
@@ -97,7 +97,6 @@ page {
     flex-direction: row;
     justify-content: space-between;
 	border-bottom: 0.1cm solid var(--bord);
-	
 }
 
 /* CL */
@@ -130,13 +129,12 @@ page {
 	padding-right: var(--pad-m);
 }
 
-
 /* Headings */
 .head {
     text-transform: uppercase;
     letter-spacing: 0.1cm;
     font-size: var(--font-head);
-	margin-top: 0.4cm;
+	margin-top: 0.3cm;
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 }
@@ -250,28 +248,28 @@ a {
 .Edu {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 .Edu .item{
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.25cm;
-	margin-top: 0.25cm;
+	margin-bottom: 0.25cm;
 }
 
 /* Work */
 .Wor {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 .Wor .item{
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.25cm;
-	margin-top: 0.25cm;
+	margin-bottom: 0.25cm;
 }
-.Wor .lvl-0 {
+.Wor .line-1 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -297,7 +295,7 @@ a {
 .Exp {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 .Exp .item{
     color: var(--Ltxt);
@@ -305,14 +303,14 @@ a {
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.25cm;
-	margin-top: 0.25cm;
+	margin-bottom: 0.25cm;
 }
 
 /* Skills */
 .Ski {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 .Ski .item{
     color: var(--Ltxt);
@@ -320,7 +318,7 @@ a {
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.25cm;
-	margin-top: 0.25cm;
+	margin-bottom: 0.25cm;
 }
 .Ski ul {
     display: flex;
@@ -344,7 +342,7 @@ a {
 .Lan {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 .Lan .item{
     display: flex;
@@ -354,7 +352,7 @@ a {
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.25cm;
-	margin-top: 0.25cm;
+	margin-bottom: 0.25cm;
 }
 .Lan .language{
     padding-right: 0.2cm;
@@ -364,7 +362,7 @@ a {
 .Pub {
     width: 100%;
     align-self: center;
-    margin-bottom: 0.5cm;
+    margin-bottom: 0.3cm;
 }
 .Pub .item{
     color: var(--Rtxt);
@@ -374,7 +372,7 @@ a {
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.4cm;
-	margin-top: 0.4cm;
+	margin-bottom: 0.4cm;
 }
 
 /* Socials */
@@ -389,7 +387,7 @@ a {
 
 /* ---------------------- Letter --------------------- */
 /* Company */
-.company {
+.Company {
 	height: 3.5cm;
     display: flex;
     flex-direction: column;
@@ -401,7 +399,7 @@ a {
 }
 
 /* Subject */
-.subject{
+.Subject{
 	margin-top: 0.75cm;
     letter-spacing: 0.05cm;
     font-size: var(--font-title);
@@ -412,7 +410,7 @@ a {
 }
 
 /* Letter Content */
-.let-cont {
+.Let-cont {
     margin-top: 0.5cm;
     text-align: justify;
     hyphens: auto;
@@ -420,22 +418,22 @@ a {
 	padding-right:0.75cm;
 }
 
-.let-cont p{
+.Let-cont .item{
     margin-top: 0.225cm;
     margin-bottom: 0.225cm;
     font-size: var(--font-let);
     line-height: var(--font-space);
     color: var(--Rtxt);
 }
-.let-cont b {
+.Let-cont b {
     color: var(--Rtxt);
 	font-weight: var(--font-weight);
 }
-.let-cont i {
+.Let-cont i {
     color: var(--Rtxt);
 	font-weight: var(--font-weight);
 }
-.close {
+.Close-let {
     margin-top: 0.3cm;
     display: flex;
     flex-direction: row;
@@ -444,7 +442,7 @@ a {
 	padding-right:0.75cm;
 }
 
-.close .NameCityDate{
+.Close-let .NameCityDate{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -452,7 +450,7 @@ a {
     font-size: var(--font-head);
 }
 
-.SignPic {
+.Close-let .SignPic {
     width: 7.5cm;
 }
 
