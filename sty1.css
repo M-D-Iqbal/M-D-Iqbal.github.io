@@ -401,7 +401,7 @@ a {
 /* Subject */
 .Subject{
 	margin-top: 0.75cm;
-    letter-spacing: 0.05cm;
+    letter-spacing: 0.025cm;
     font-size: var(--font-title);
     font-weight: bold;
     color: var(--Rtxt);
