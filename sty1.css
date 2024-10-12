@@ -18,28 +18,32 @@
     --temp: #333333;
     --bord: #333333;
 
-    --font-name1: 0.6cm;
-    --font-name2: 0.7cm;
-    --font-label: 0.5cm;
-    --font-contact: 0.375cm;
+    /* Fonts */
+    --font-size: 37px;
+    
+    --font-name1: 0.6em;
+    --font-name2: 0.7em;
+    --font-label: 0.5em;
+    --font-contact: 0.375em;
 
-    --font-head: 0.45cm;
-    --font-list: 0.425cm;
-    --font-title: 0.4cm;
-    --font-org: 0.4cm;
-    --font-date: 0.375cm;
-    --font-high: 0.365cm;
-    --font-key: 0.2cm;
-
-    --font-space: 0.45cm;
-    --font-mark: 0.4cm;
+    --font-head: 0.45em;
+    --font-list: 0.425em;
+    --font-title: 0.4em;
+    --font-org: 0.4em;
+    --font-date: 0.375em;
+    --font-high: 0.365em;
+    --font-key: 0.2em;
 	
-    --font-pub: 0.365cm;
-    --font-let: 0.425cm;
-	
-	--pad-m: 0.5cm;
-    --pad-i: 0.25cm;
+    --font-pub: 0.365em;
+    --font-let: 0.425em;
 
+	/* Spacing */
+    --size-mark: 0.4cm;
+    --lineH-let: 1em;
+    --lineH-high: 1.25em;
+
+	--pad-m: 0.5em;
+    --pad-i: 0.25em;
 
     /* Picture Spacing */;
     --picR: 5%;
@@ -52,6 +56,7 @@ body {
     background: white;
     justify-content: center;
     font-weight: var(--font-weight);
+    font-size: var(--font-size);
 }
 page[size="A4"] {
     width: 21cm;
@@ -95,7 +100,7 @@ page {
     height: 25.05cm;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
 	border-bottom: 0.1cm solid var(--bord);
 }
 
@@ -173,8 +178,8 @@ a {
 	border-radius: var(--picR);
 }
 
-/* Bio */
-.bio{
+/* Intro */
+.intro{
 	height: 3.5cm;
     display: flex;
     flex-direction: column;
@@ -183,9 +188,14 @@ a {
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 }
+.bio{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .basics{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 	justify-content: space-between;
 }
 .name{
@@ -282,13 +292,13 @@ a {
     margin-bottom: 0cm;
     padding-left: 0.75cm;
 }
-.Wor .highlights>ul>li {
+.Wor .highlights {
     padding-left: 0cm;
-    line-height: var(--font-space);
+    line-height: var(--lineH-high);
 }
 .Wor.highlights>ul>li::marker {
     color: var(--Rtxt);
-    font-size: var(--font-mark);
+    font-size: var(--size-mark);
 }
 
 /* Expertise */
@@ -314,7 +324,7 @@ a {
 }
 .Ski .item{
     color: var(--Ltxt);
-    font-size: var(--font-list);
+    font-size: var(--font-high);
 	padding-left: var(--pad-i);
 	padding-right: var(--pad-i);
 	margin-top: 0.25cm;
@@ -332,7 +342,6 @@ a {
     background-color: var(--Lheadbg);
     color: var(--Lhead);
 	padding: 0.05cm;
-	font-size: var(--font-org);
 }
 .Ski ul>li::marker {
     font-size: 0;
@@ -377,14 +386,17 @@ a {
 
 /* Socials */
 .Social {
-	width: 100%;
 	display: flex;
-    flex-direction: row;    
-    justify-content: space-evenly;
+    flex-direction: row; 
+    justify-content: center;
 	margin-top: auto;
 	margin-bottom: 0.2cm;
+    font-size: var(--font-list);
 }
-
+.Social .item{
+ padding-right: var(--pad-i);
+ padding-left: var(--pad-i);  
+}
 /* ---------------------- Letter --------------------- */
 /* Company */
 .Company {
@@ -396,6 +408,7 @@ a {
 	letter-spacing: 0.05cm;
     color: var(--Ltxt);
 	padding-left: 0.6cm;
+    font-size: var(--font-list);
 }
 
 /* Subject */
@@ -422,7 +435,7 @@ a {
     margin-top: 0.225cm;
     margin-bottom: 0.225cm;
     font-size: var(--font-let);
-    line-height: var(--font-space);
+    line-height: var(--lineH-let);
     color: var(--Rtxt);
 }
 .Let-cont b {
@@ -502,4 +515,23 @@ a {
 .rightside a{
     color: var(--Rtxt);
     font-style: italic;
+}
+
+/* ---------------------- Screens --------------------- */
+@media screen and (max-width: 440px) {
+    body {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        font-size: 33px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        font-size: 35px;
+    }
 }
