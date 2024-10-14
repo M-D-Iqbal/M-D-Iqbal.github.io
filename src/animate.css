@@ -1,0 +1,16 @@
+.transition-main{
+  opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
+}
+
+html.is-animating .transition-main {
+  opacity: 1;
+  transform: translateX(100%);
+}
+
+html.is-leaving .transition-main {
+  opacity: 0;
+  transform: translateX(0);
+}
