@@ -364,8 +364,8 @@ a:hover{
         margin: 0;
         position: relative !important;
         width: 100%;
-        min-height: 50vh;
-        padding-bottom: 10vh;
+        min-height: 90vh;
+        padding-bottom: 20vh;
     }
 
     .about{margin-top: 0;}
@@ -391,7 +391,7 @@ a:hover{
 
     @media screen and (max-width: 400px) {
         body {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 } 
