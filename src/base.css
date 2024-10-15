@@ -336,7 +336,7 @@ a:hover{
 /* ----------------- Screen ---------------- */
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 16px;
+        font-size: 15px;
     }
     .content{
         width: 100%;
@@ -346,10 +346,10 @@ a:hover{
         left: 0vh;
         display: flex;
         flex-direction: column;
-        overflow-y: scroll;
+        overflow-y: auto;
     }
     .navmenu {
-        padding-left: 0em;
+        padding: 0em;
     }
     .navmenu ul>li {
         padding-right: 0em;
@@ -385,13 +385,13 @@ a:hover{
     }
     @media screen and (max-width: 600px) {
         body {
-            font-size: 14px;
+            font-size: 12.5px;
         }
     }
 
     @media screen and (max-width: 400px) {
         body {
-            font-size: 14px;
+            font-size: 12.5px;
         }
     }
 } 
