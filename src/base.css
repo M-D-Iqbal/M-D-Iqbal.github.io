@@ -3,7 +3,7 @@
     /* Font Style */
     --font-family: "Tinos", serif;
     --font-weight: 400;
-    --font-size: 20px;
+    --font-size: 18px;
 
     /* Colors */
     --bodyCol: #EEEFF1;
@@ -19,10 +19,6 @@
 
     --rightbg: #EEEFF1;
     --rightfg: #424242;
-
-    --CVbg : white;
-    --CVfg : #424242;
-    --accCV : #c4c4c4;
 }
 *,
 *:before,
@@ -64,13 +60,14 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     font-size: 1em;
 }
 
 /* ----------------- Nav ----------------- */
 .navmenu {
-    margin-left: 5vh;
+    margin: 0;
+
 }
 .navmenu a {
     text-decoration: none;
@@ -81,15 +78,18 @@ body {
     display: flex;
     list-style: none;
     align-items: center;
+    justify-content: space-evenly;
     font-size: 1.15em;
 }
 .navmenu ul>li {
-    padding-right: 1em;
+    padding-right: 0.5em;
+    padding-left: 0.5em;
 }
 .navmenu a,
 .navmenu a:focus {
     color: var(--styfg);
-    padding: 0 0.25em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
     font-weight: 400;
     display: flex;
     align-items: center;
@@ -110,22 +110,9 @@ body {
     background-color: var(--styfg);
     border: solid 0.1em var(--accHead);
 }
-
-.cv-head{
-    padding: 0 0.5em;
-    margin-right: 5vh;
-    border-radius: 5px;
-    color: var(--CVfg);
-    background-color: var(--CVbg);
-    border: solid 0.1em var(--accCV);
-}
-.cv-head a{
-    color: var(--CVfg);
-}
 /* ------------------ Content ------------------ */
 .content {
     width: 100%;
-    height:90vh;
     position: fixed;
     top: 10vh;
     left: 0vh;
@@ -135,34 +122,33 @@ body {
 }
 /* ------------------ Right ------------------- */
 .right {
-    color: var(--rightfg);
     height: 90vh;
+    color: var(--rightfg);
     width: 75%;
     margin-left: 25%;
     position: relative;
     background-color: var(--rightbg);
-    overflow: scroll;
+    padding-bottom: 10vh;
+    overflow-y: auto;
 }
 /* ------------------- Left ------------------ */
 .left {
-    color: var(--leftfg);
-    height: 90vh;
     width: 25%;
     background-color: var(--leftbg);
     position: fixed;
+    padding-bottom: 2vh;
 }
 .person{
-    height: 90vh;
     width: 100%;
 }
 /* Pic */
 .profilePic {
-    height: 13em;
+    height: 11em;
     width: auto;
     margin: auto;
     display: block;
     border: solid 0.1em var(--leftfg);
-    border-radius: 10%;
+    border-radius: 20px;
     margin-top: 12vh;
     margin-bottom: 1em;
 }
@@ -175,12 +161,13 @@ body {
     align-items: center;
     margin: auto;
     margin-bottom: 1em;
+    color: var(--leftfg);
 }
 .bio .name{
-    font-size: 1.5em;
+    font-size: 1.3em;
 }
 .bio .label{
-    font-size: 1.25em;
+    font-size: 1.2em;
 }
 /* Contact */
 .contact {
@@ -192,6 +179,7 @@ body {
     margin: auto;
     font-size: 1em;
     margin-bottom: 0.5em;
+    color: var(--leftfg);
 }
 .contact .item{
     padding: 0.2em;
@@ -212,6 +200,7 @@ body {
     justify-content: center;
     align-items: center;
     margin: auto;
+    margin-bottom: 0.5em;
 }
 .Social .item{
     font-size: 1.15em;
@@ -225,12 +214,29 @@ body {
 .Social i:hover {
     color: var(--accLink);
   }
+.cv-head{
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border-radius: 5px;
+    background-color: var(--stybg);
+    border: solid 0.1em var(--accHead);
+}
+.cv-head a{
+    color: var(--styfg);
+}
+.cv-head a:hover{
+    color: var(--accLink);
+}
 /* ----------------- Headings --------------- */
 h3{
     font-weight: normal;
     font-size: 1.5em;
     letter-spacing: 0.125em;
-    margin-top: 1.25em;
+    margin-top: 1.225em;
     margin-bottom: 0.2em;
 }
 h4{
@@ -250,16 +256,14 @@ h5{
 }
 p {
     font-weight: normal;
-    font-size: 0.9em;
-    letter-spacing: 0.03em;
-    margin-top: 0.05em;
-    margin-bottom: 0.05em;
+    font-size: 1em;
+    letter-spacing: normal;
+    margin-top: 0.3em;
+    margin-bottom: 0.3em;
+    line-height: 1.4;
 }
 a {
     text-decoration: none;
-}
-.left a{
-    color: var(--leftfg);
 }
 .right a{
     color: var(--rightfg);
@@ -286,7 +290,7 @@ a:hover{
 .skill{
     margin-left: 7.5%;
     margin-right: 7.5%;
-    margin-top: 17.5vh;
+    margin-top: 12.5vh;
 }
 .skill-set{
     padding-left: 0;
@@ -297,11 +301,15 @@ a:hover{
     border-radius: 5px;
     display: inline-block;
     list-style: none;
-    margin: 15px 15px 0 0;
-    padding: 10px;
+    margin: 1em 1em 0 0;
+    padding: 5px;
     text-align: justify;
     font-size: 1em;
     letter-spacing: 0.03em;
+}
+.pub{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
 }
 
 /* ------------------ Media ------------------ */
@@ -314,10 +322,7 @@ a:hover{
 }
 
 /* -------------- Pub-Template -------------- */
-.pub{
-    margin-left: 7.5%;
-    margin-right: 7.5%;
-}
+
 .templates div {
     display: inline;
     margin-top: 0.5em;
@@ -330,9 +335,12 @@ a:hover{
 
 /* ----------------- Screen ---------------- */
 @media screen and (max-width: 1024px) {
+    body {
+        font-size: 14px;
+    }
     .content{
         width: 100%;
-        height:100vh;
+        height:90vh;
         position: fixed;
         top: 10vh;
         left: 0vh;
@@ -340,28 +348,50 @@ a:hover{
         flex-direction: column;
         overflow-y: scroll;
     }
+    .navmenu {
+        padding-left: 0em;
+    }
+    .navmenu ul>li {
+        padding-right: 0em;
+        padding-left: 0em;
+    }
     .left {
         margin: 0;
         position: relative !important;
         width: 100%;
-        min-height: 600px;
     }
     .right {
         margin: 0;
         position: relative !important;
         width: 100%;
-        min-height: 600px;
+        min-height: 50vh;
     }
+    .about{margin-top: 0;}
+    .work{margin-top: 0;}
+    .edu{margin-top: 0;}
+    .pub{margin-top: 0;}
+    .skill{margin-top: 0;}
+    .skill-set li{
+        border-radius: 5px;
+        display: inline-block;
+        list-style: none;
+        margin: 0.25em 0.25em 0 0;
+        padding: 0.5em;
+        text-align: justify;
+        font-size: 0.75em;
+        letter-spacing: normal;
+    }
+
 
     @media screen and (max-width: 600px) {
         body {
-            font-size: 14px;
+            font-size: 12px;
         }
     }
 
     @media screen and (max-width: 400px) {
         body {
-            font-size: 10px;
+            font-size: 8px;
         }
     }
 } 
