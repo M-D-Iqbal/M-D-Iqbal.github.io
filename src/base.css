@@ -367,7 +367,9 @@ a:hover{
         min-height: 90vh;
         padding-bottom: 20vh;
     }
-
+    h4{
+        letter-spacing: 0.03;
+    }
     .about{margin-top: 0;}
     .work{margin-top: 0;}
     .edu{margin-top: 0;}
