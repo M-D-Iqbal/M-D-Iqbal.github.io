@@ -232,32 +232,32 @@ body {
     color: var(--accLink);
 }
 /* ----------------- Headings --------------- */
-h3{
+h1{
     font-weight: normal;
     font-size: 1.5em;
     letter-spacing: 0.125em;
     margin-top: 1.225em;
     margin-bottom: 0.2em;
 }
-h4{
+h2{
     font-weight: normal;
-    font-size: 1.15em;
-    letter-spacing: 0.05em;
+    letter-spacing: normal;
+    font-size: 1.1em;
     margin-top: 1em;
     margin-bottom: 0.05em;
 }
-h5{
+h3{
     font-weight: normal;
     font-style: italic;
-    font-size: 1em;
-    letter-spacing: 0.03em;
+    letter-spacing: normal;
+    font-size: 0.95em;
     margin-top: 0.05em;
     margin-bottom: 0.05em;
 }
 p {
     font-weight: normal;
-    font-size: 1em;
     letter-spacing: normal;
+    font-size: 0.95em;
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     line-height: 1.4;
@@ -366,9 +366,6 @@ a:hover{
         width: 100%;
         min-height: 90vh;
         padding-bottom: 20vh;
-    }
-    h4{
-        letter-spacing: 0.03;
     }
     .about{margin-top: 0;}
     .work{margin-top: 0;}
