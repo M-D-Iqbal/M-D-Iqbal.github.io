@@ -336,7 +336,7 @@ a:hover{
 /* ----------------- Screen ---------------- */
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 14px;
+        font-size: 16px;
     }
     .content{
         width: 100%;
@@ -365,7 +365,9 @@ a:hover{
         position: relative !important;
         width: 100%;
         min-height: 50vh;
+        padding-bottom: 5vh;
     }
+
     .about{margin-top: 0;}
     .work{margin-top: 0;}
     .edu{margin-top: 0;}
@@ -385,13 +387,13 @@ a:hover{
 
     @media screen and (max-width: 600px) {
         body {
-            font-size: 12px;
+            font-size: 14px;
         }
     }
 
     @media screen and (max-width: 400px) {
         body {
-            font-size: 8px;
+            font-size: 12px;
         }
     }
 } 
