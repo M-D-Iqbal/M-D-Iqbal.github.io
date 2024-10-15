@@ -336,7 +336,7 @@ a:hover{
 /* ----------------- Screen ---------------- */
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 13px;
+        font-size: 11px;
     }
     .content{
         width: 100%;
@@ -382,16 +382,5 @@ a:hover{
         text-align: justify;
         font-size: 1em;
         letter-spacing: normal;
-    }
-    @media screen and (max-width: 600px) {
-        body {
-            font-size: 12px;
-        }
-    }
-
-    @media screen and (max-width: 400px) {
-        body {
-            font-size: 12px;
-        }
     }
 } 
