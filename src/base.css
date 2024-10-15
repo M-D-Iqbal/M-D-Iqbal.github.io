@@ -321,22 +321,10 @@ a:hover{
     clear: both;
 }
 
-/* -------------- Pub-Template -------------- */
-
-.templates div {
-    display: inline;
-    margin-top: 0.5em;
-}
-
-.templates div {
-    display: inline;
-    margin-bottom: 4px;
-}
-
 /* ----------------- Screen ---------------- */
 @media screen and (max-width: 1024px) {
     body {
-        font-size: 13px;
+        font-size: 14px;
     }
     .content{
         width: 100%;
@@ -367,6 +355,7 @@ a:hover{
         min-height: 90vh;
         padding-bottom: 20vh;
     }
+    p{font-size: 1em;}
     .about{margin-top: 0;}
     .work{margin-top: 0;}
     .edu{margin-top: 0;}
