@@ -6,19 +6,10 @@
     --font-size: 18px;
 
     /* Colors */
-    --bodyCol: #EEEFF1;
-
-    --stybg: #424242;;
-    --styfg: white;
-
-    --accHead: #c4c4c4;
-    --accLink: #0071bd;
-
-    --leftbg: #EEEFF1;
-    --leftfg: #424242;
-
-    --rightbg: #EEEFF1;
-    --rightfg: #424242;
+    --backCol: white;
+    --tempCol: #436b93;
+    --textCol: #242424;
+    --acceCol: #efc04a; 
 }
 *,
 *:before,
@@ -37,7 +28,7 @@ html {
 /* ------------------ Body ------------------ */
 body {
     -webkit-font-smoothing: antialiased;
-    background-color: var(--bodyCol);
+    background-color: var(--backCol);
     font-family: var(--font-family);
     font-size: var(--font-size);
     font-weight: 400;
@@ -55,8 +46,8 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    color: var(--styfg);
-    background-color: var(--stybg);
+    color: var(--backCol);
+    background-color: var(--tempCol);
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -87,7 +78,7 @@ body {
 }
 .navmenu a,
 .navmenu a:focus {
-    color: var(--styfg);
+    color: var(--backCol);
     padding-left: 0.5em;
     padding-right: 0.5em;
     font-weight: 400;
@@ -98,17 +89,17 @@ body {
     position: relative;
 }
 .navmenu li:hover>a{
-    color: var(--accLink);
+    color: var(--tempCol);
     border-radius: 5px;
-    background-color: var(--styfg);
+    background-color: var(--acceCol);
     transition: color 0.3s ease;
 }
 .navmenu .active,
 .navmenu .active:focus {
-    color: var(--stybg);
+    color: var(--tempCol);
     border-radius: 5px;
-    background-color: var(--styfg);
-    border: solid 0.1em var(--accHead);
+    background-color: var(--backCol);
+    border: solid 0.1em var(--acceCol);
 }
 /* ------------------ Content ------------------ */
 .content {
@@ -123,18 +114,18 @@ body {
 /* ------------------ Right ------------------- */
 .right {
     height: 90vh;
-    color: var(--rightfg);
+    color: var(--textCol);
     width: 75%;
     margin-left: 25%;
     position: relative;
-    background-color: var(--rightbg);
+    background-color: var(--backCol);
     padding-bottom: 10vh;
     overflow-y: auto;
 }
 /* ------------------- Left ------------------ */
 .left {
     width: 25%;
-    background-color: var(--leftbg);
+    background-color: var(--backCol);
     position: fixed;
     padding-bottom: 2vh;
 }
@@ -147,7 +138,7 @@ body {
     width: auto;
     margin: auto;
     display: block;
-    border: solid 0.1em var(--leftfg);
+    border: solid 0.1em var(--textCol);
     border-radius: 20px;
     margin-top: 12vh;
     margin-bottom: 1em;
@@ -161,13 +152,14 @@ body {
     align-items: center;
     margin: auto;
     margin-bottom: 1em;
-    color: var(--leftfg);
+    color: var(--textCol);
 }
 .bio .name{
-    font-size: 1.3em;
+    font-size: 1.5em;
 }
 .bio .label{
     font-size: 1.2em;
+    color: var(--tempCol);
 }
 /* Contact */
 .contact {
@@ -179,19 +171,19 @@ body {
     margin: auto;
     font-size: 1em;
     margin-bottom: 0.5em;
-    color: var(--leftfg);
+    color: var(--textCol);
 }
 .contact .item{
     padding: 0.2em;
 }
 .contact a{
-    color: var(--leftfg);
+    color: var(--textCol);
 }
 .contact i{
-    color: var(--leftfg);
+    color: var(--tempCol);
 }
 .contact a:hover{
-    color: var(--accLink);
+    color: var(--acceCol);
 }
 .Social {
     width: 100%;
@@ -207,37 +199,39 @@ body {
     padding: 0.75em;
 }
 .Social i {
-    color: var(--leftfg);
+    color: var(--tempCol);
     transition: color 0.3s ease;
   }
   
 .Social i:hover {
-    color: var(--accLink);
+    color: var(--acceCol);
   }
 .cv-head{
-    width: 25%;
+    width: 30%;
+    font-size: 1.2em;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: auto;
     border-radius: 5px;
-    background-color: var(--stybg);
-    border: solid 0.1em var(--accHead);
+    background-color: var(--acceCol);
+    border: solid 0.1em var(--tempCol);
 }
 .cv-head a{
-    color: var(--styfg);
+    color: var(--backCol);
 }
 .cv-head a:hover{
-    color: var(--accLink);
+    color: var(--tempCol);
 }
 /* ----------------- Headings --------------- */
 h1{
     font-weight: normal;
     font-size: 1.5em;
-    letter-spacing: 0.125em;
+    letter-spacing: 0.05em;
     margin-top: 1.225em;
     margin-bottom: 0.2em;
+    color: var(--textCol);
 }
 h2{
     font-weight: normal;
@@ -245,14 +239,16 @@ h2{
     font-size: 1.05em;
     margin-top: 1em;
     margin-bottom: 0.05em;
+    color: var(--tempCol);
 }
 h3{
     font-weight: normal;
-    font-style: italic;
+    font-style: normal;
     letter-spacing: normal;
     font-size: 0.95em;
     margin-top: 0.05em;
     margin-bottom: 0.05em;
+    color: var(--textCol);
 }
 p {
     font-weight: normal;
@@ -261,15 +257,21 @@ p {
     margin-top: 0.3em;
     margin-bottom: 0.3em;
     line-height: 1.4;
+    color: var(--textCol);
 }
 a {
     text-decoration: none;
 }
 .right a{
-    color: var(--rightfg);
+    color: var(--textCol);
 }
 a:hover{
-    color: var(--accLink);
+    color: var(--tempCol);
+}
+b {
+    font-weight: normal;
+    font-style: italic;
+    color: var(--tempCol);
 }
 /* -------------- Right Section ------------- */
 .about{
@@ -277,12 +279,17 @@ a:hover{
     margin-right:7.5%;
     margin-top: 22.5vh;
     }
+.strengths{
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    margin-top: 10vh;
+}
 .work{
     margin-left: 7.5%;
     margin-right: 7.5%;
     margin-top: 10vh;
     }
-.edu{
+.education{
     margin-left: 7.5%;
     margin-right: 7.5%;
     margin-top: 17.5vh;
@@ -296,8 +303,8 @@ a:hover{
     padding-left: 0;
 }
 .skill-set li{
-    background: var(--stybg);
-    color: var(--styfg);
+    background: var(--tempCol);
+    color: var(--backCol);
     border-radius: 5px;
     display: inline-block;
     list-style: none;
@@ -307,9 +314,10 @@ a:hover{
     font-size: 1em;
     letter-spacing: 0.03em;
 }
-.pub{
+.publications{
     margin-left: 7.5%;
     margin-right: 7.5%;
+    margin-top: 10vh;
 }
 
 /* ------------------ Media ------------------ */
