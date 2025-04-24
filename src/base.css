@@ -73,8 +73,8 @@ body {
     font-size: 1.15em;
 }
 .navmenu ul>li {
-    padding-right: 0.5em;
-    padding-left: 0.5em;
+    padding-right: 0.25em;
+    padding-left: 0.25em;
 }
 .navmenu a,
 .navmenu a:focus {
