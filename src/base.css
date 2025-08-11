@@ -294,20 +294,34 @@ b {
     margin-right: 7.5%;
     margin-top: 12.5vh;
 }
-.skill-set{
-    padding-left: 0;
-}
-.skill-set li{
+.skill li {
     background: var(--tempCol);
     color: var(--backCol);
     border-radius: 5px;
-    display: inline-block;
     list-style: none;
-    margin: 1em 1em 0 0;
     padding: 5px;
-    text-align: justify;
+    text-align: center;
     font-size: 1em;
     letter-spacing: 0.03em;
+    display: block;
+}
+.expertise {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 1em; 
+}
+.tech-skills {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr); 
+    gap: 1em; 
+}
+.tools {
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); 
+    gap: 1em; 
 }
 .publications{
     margin-left: 7.5%;
