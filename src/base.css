@@ -7,9 +7,10 @@
 
     /* Colors */
     --backCol: white;
-    --tempCol: #436b93;
-    --textCol: #242424;
-    --acceCol: #efc04a; 
+    --tempCol: #294c6e;
+    --textCol: #555555;
+    --acceCol: rgb(255, 162, 3);
+    --tempTxt: rgb(235, 235, 235); 
 }
 *,
 *:before,
@@ -46,7 +47,7 @@ body {
     position: fixed;
     left: 0;
     top: 0;
-    color: var(--backCol);
+    color: var(--tempTxt);
     background-color: var(--tempCol);
     display: flex;
     flex-direction: row;
@@ -78,7 +79,7 @@ body {
 }
 .navmenu a,
 .navmenu a:focus {
-    color: var(--backCol);
+    color: var(--tempTxt);
     padding-left: 0.25em;
     padding-right: 0.25em;
     font-weight: 400;
@@ -98,7 +99,7 @@ body {
 .navmenu .active:focus {
     color: var(--tempCol);
     border-radius: 5px;
-    background-color: var(--backCol);
+    background-color: var(--tempTxt);
     border: solid 0.1em var(--acceCol);
 }
 /* ------------------ Content ------------------ */
@@ -138,9 +139,9 @@ body {
     width: auto;
     margin: auto;
     display: block;
-    border: solid 0.1em var(--textCol);
+    border: solid 0.1em var(--tempTxt);
     border-radius: 20px;
-    margin-top: 12vh;
+    margin-top: 10vh;
     margin-bottom: 1em;
 }
 /* Bio */
@@ -219,10 +220,10 @@ body {
     border: solid 0.1em var(--tempCol);
 }
 .cv-head a{
-    color: var(--backCol);
+    color: var(--tempCol); 
 }
 .cv-head a:hover{
-    color: var(--tempCol);
+    color: var(--tempTxt);
 }
 /* ----------------- Headings --------------- */
 h1{
@@ -295,8 +296,8 @@ b {
     margin-top: 12.5vh;
 }
 .skill li {
-    background: var(--tempCol);
-    color: var(--backCol);
+    background: var(--tempTxt);
+    color: var(--textCol);
     border-radius: 5px;
     list-style: none;
     padding: 5px;
@@ -328,6 +329,13 @@ b {
     margin-right: 7.5%;
     margin-top: 10vh;
 }
+.section-list{
+    margin-top: 0px;
+}
+.section-list li::marker{
+    color: var(--tempCol);
+}
+
 
 /* ------------------ Media ------------------ */
 .clearfix:after {
