@@ -265,17 +265,17 @@
         "heading": "Publications",
         "entries": [
             "<h3>Peer-Reviewed Journal Papers</h3>",
-            "<b>M. D. Iqbal</b>, et al. <a href=\"https://doi.org/10.1016/j.tafmec.2023.104056\">\"Transient thermoelastic fracture analysis of functionally graded materials using the scaled boundary finite element method.\"</a> Theoretical and Applied Fracture Mechanics, vol. 127, Oct. 2023, p. 104056.",
-            "<b>M. D. Iqbal</b>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2022.108305\">\"Thermoelastic fracture analysis of functionally graded materials using the scaled boundary finite element method.\"</a> Engineering Fracture Mechanics, vol. 264, Apr. 2022, p. 108305.",
-            "<b>M. D. Iqbal</b>, et al. <a href=\"https://doi.org/10.1016/j.cma.2021.114106\">\"Development of the scaled boundary finite element method for crack propagation modeling of elastic solids subjected to coupled thermo-mechanical loads.\"</a> Computer Methods in Applied Mechanics and Engineering, vol. 387, Dec. 2021, p. 114106.",
-            "E.T. Ooi, <b> M. D. Iqbal</b>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2020.107300\">\"A polygon scaled boundary finite element formulation for transient coupled thermoelastic fracture problems.\"</a> Engineering Fracture Mechanics, vol. 240, Dec. 2020, p. 107300.",
+            "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.tafmec.2023.104056\">\"Transient thermoelastic fracture analysis of functionally graded materials using the scaled boundary finite element method.\"</a> Theoretical and Applied Fracture Mechanics, vol. 127, Oct. 2023, p. 104056.",
+            "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2022.108305\">\"Thermoelastic fracture analysis of functionally graded materials using the scaled boundary finite element method.\"</a> Engineering Fracture Mechanics, vol. 264, Apr. 2022, p. 108305.",
+            "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.cma.2021.114106\">\"Development of the scaled boundary finite element method for crack propagation modeling of elastic solids subjected to coupled thermo-mechanical loads.\"</a> Computer Methods in Applied Mechanics and Engineering, vol. 387, Dec. 2021, p. 114106.",
+            "E.T. Ooi, <i> M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2020.107300\">\"A polygon scaled boundary finite element formulation for transient coupled thermoelastic fracture problems.\"</a> Engineering Fracture Mechanics, vol. 240, Dec. 2020, p. 107300.",
             "<h3>Conference Papers</h3> ",
-            "C. Birk, R. Assaf, <b>M. D. Iqbal</b>, H. Gravenkamp, <a>\"Numerische strukturmodellierung mit polygon-elementen.\"</a> Baustatik-Baupraxis 15 (2024).",
-            "<b>M. D. Iqbal</b>, et al.,  <a href=\"https://doi.org/10.1002/pamm.201900109\">\"Scaled boundary finite element modelling of thermally induced crack propagation.\"</a> Proceedings in Applied Mathematics and Mechanics 19 (2019).",
-            "<b>M. D. Iqbal</b>, C. Birk, <a href=\"https://doi.org/10.1007/978-3-658-23627-4_13\">\"Numerical modelling of thermally induced crack propagation in functionally graded materials using the scaled boundary finite element method.\"</a> Forschungskolloquium 2018 Grasellenbach (2018).",
+            "C. Birk, R. Assaf, <i>M. D. Iqbal</i>, H. Gravenkamp, <a>\"Numerische strukturmodellierung mit polygon-elementen.\"</a> Baustatik-Baupraxis 15 (2024).",
+            "<i>M. D. Iqbal</i>, et al.,  <a href=\"https://doi.org/10.1002/pamm.201900109\">\"Scaled boundary finite element modelling of thermally induced crack propagation.\"</a> Proceedings in Applied Mathematics and Mechanics 19 (2019).",
+            "<i>M. D. Iqbal</i>, C. Birk, <a href=\"https://doi.org/10.1007/978-3-658-23627-4_13\">\"Numerical modelling of thermally induced crack propagation in functionally graded materials using the scaled boundary finite element method.\"</a> Forschungskolloquium 2018 Grasellenbach (2018).",
             "<h3>Theses</h3>",
-            "<b>M. D. Iqbal</b>, <a href=\"https://doi.org/10.17185/duepublico/82324\">\"Development of scaled boundary polygon elements for coupled thermoelastic fracture modeling.\"</a> PhD Thesis, University of Duisburg-Essen (2024).",
-            "<b>M. D. Iqbal</b>, \"Development of polygon elements based on the scaled boundary finite element method.\" Master Thesis, University of Duisburg-Essen (2017)."
+            "<i>M. D. Iqbal</i>, <a href=\"https://doi.org/10.17185/duepublico/82324\">\"Development of scaled boundary polygon elements for coupled thermoelastic fracture modeling.\"</a> PhD Thesis, University of Duisburg-Essen (2024).",
+            "<i>M. D. Iqbal</i>, \"Development of polygon elements based on the scaled boundary finite element method.\" Master Thesis, University of Duisburg-Essen (2017)."
             
         ]
     },
