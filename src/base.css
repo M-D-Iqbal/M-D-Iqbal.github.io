@@ -276,58 +276,61 @@ b {
 }
 /* -------------- Right Section ------------- */
 .about{
-    margin-left: 7.5%;
-    margin-right:7.5%;
+    margin-left: 2.5%;
+    margin-right:2.5%;
     margin-top: 22.5vh;
     }
 .work{
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-top: 10vh;
     }
 .education{
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-top: 17.5vh;
     }
 .skill{
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-top: 12.5vh;
 }
 .skill li {
-    background: var(--tempTxt);
     color: var(--textCol);
-    border-radius: 5px;
-    list-style: none;
-    padding: 5px;
-    text-align: center;
+    list-style: disc;
     font-size: 1em;
-    letter-spacing: 0.03em;
-    display: block;
+    letter-spacing: 0.02em;
+}
+.skill li::marker {
+    color: var(--tempCol);
 }
 .expertise {
-    padding-left: 0;
+    padding-left: 1em;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    gap: 1em; 
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.1em 1em;
 }
-.tech-skills {
-    padding-left: 0;
+.tech-flat {
+    padding-left: 1em;
     display: grid;
-    grid-template-columns: repeat(8, 1fr); 
-    gap: 1em; 
+    grid-template-columns: repeat(6, 1fr);
+    gap: 0.1em 1em;
 }
-.tools {
-    padding-left: 0;
+.languages {
+    padding-left: 1em;
     display: grid;
-    grid-template-columns: repeat(6, 1fr); 
-    gap: 1em; 
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.1em 1em;
 }
 .publications{
-    margin-left: 7.5%;
-    margin-right: 7.5%;
+    line-height: 2.5;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     margin-top: 10vh;
+}
+.publications h3{
+    font-size: 1.2em;
+    color: var(--tempCol);
 }
 .section-list{
     margin-top: 0px;
