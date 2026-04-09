@@ -15,7 +15,7 @@
                 "icon": "fa-solid fa-envelope"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "name": "Phone",
                 "text": "+4917682044361",
                 "url": "",
@@ -29,7 +29,7 @@
                 "icon": "fa-solid fa-map-marker"
             },
             {
-                "enabled": true,
+                "enabled": false,
                 "name": "Birthday",
                 "text": "10/03/1991",
                 "url": "",
@@ -82,7 +82,7 @@
         "enabled": true,
         "heading": "Profile",
         "entries": [
-            "I am a Ph.D. Computational Engineer with a research background in advanced numerical methods, multi-physics simulation, and fracture mechanics. My doctoral work focused on developing and implementing the Scaled Boundary Finite Element Method (SBFEM) for coupled thermoelastic problems in engineered materials. Beyond research, I have built practical skills in software development, workflow automation, and system integration, applying them in a production environment. I bring a rare combination of research depth and hands-on engineering practice, bridging advanced simulation and numerical methods with modern software development and automation."
+            "Ph.D. in Computational Mechanics with seven years of research in numerical methods, multi-physics simulation, and fracture mechanics. Four peer-reviewed journal publications, international research collaboration, and multiple conference presentations. Complemented by hands-on industry experience in software development, data pipelines, API integration, and workflow automation. Focused on developing simulation software that integrates data management and AI/ML capabilities to solve complex multi-physics engineering problems."
         ]
     },
     "work": {
@@ -90,14 +90,14 @@
         "heading": "Professional Experience",
         "entries": [
             {
-                "title": "Systems Engineer",
+                "title": "Software Engineer",
                 "org": "CleverBuy GmbH, Krefeld, Germany",
                 "date": "07/2025 - present",
                 "highlights": [
-                    "Designed and built an automation system that replaces time-consuming manual workflows with automated, real-time processes running across multiple connected business systems.",
-                    "Built an asynchronous job engine that continuously evaluates and applies business rules over large volumes of operational data, removing the need for manual monitoring or intervention.",
-                    "Developed API integrations connecting several external platforms, enabling reliable and automated data exchange across systems.",
-                    "Designing an AI integration layer that gives a language model structured access to the business database, enabling users to query, plan, and action changes through natural conversation."
+                    "Developed automation systems replacing manual workflows with real-time, automated processes across multiple connected business systems.",
+                    "Built large-scale data pipelines integrating third-party platforms via APIs for continuous, automated data exchange and processing.",
+                    "Designed and implemented an asynchronous job engine using Celery for continuous rule-based evaluation over large volumes of operational data.",
+                    "Scoping an AI integration layer to connect a language model to structured business data for natural language querying and insights."
                 ]
             },
             {
@@ -105,7 +105,7 @@
                 "org": "",
                 "date": "08/2024 - 06/2025",
                 "highlights": [
-                    "Pursued self-directed learning in full-stack development, data science, and machine learning, strengthening and expanding core engineering competencies."
+                    "Pursued self-directed learning in full-stack development, data science, and machine learning as part of a deliberate transition from academic research into industry engineering roles."
                 ]
             },
             {
@@ -113,11 +113,13 @@
                 "org": "University of Duisburg-Essen, Essen, Germany",
                 "date": "08/2017 - 03/2024",
                 "highlights": [
-                    "Designed, developed, and implemented numerical method (SBFEM) in MATLAB for multi-physics simulation.",
-                    "Utilized ANSYS, Abaqus, and FEAP for advanced simulations, including scripting for automation and customization.",
+                    "Developed and implemented the Scaled Boundary Finite Element Method (SBFEM) in MATLAB to simulate thermoelastic fracture in specialized engineering materials.",
+                    "Utilized ANSYS, Abaqus, Gmsh, and ParaView for advanced simulations, including scripting for automation and customization.",
+                    "Published four peer-reviewed papers in prestigious journals with over 138 cumulative citations.",
+                    "Conducted research in collaboration with international institutions and presented research at multiple international conferences.",
                     "Taught graduate courses in Structural Dynamics and programming with ANSYS, Fortran, C++, and Python.",
-                    "Supervised three master's one bachelor's theses on diverse topics in computational mechanics.",
-                    "Managed an e-learning project to digitize course content and develop tools like inverted classroom and virtual labs."
+                    "Supervised three master's and one bachelor's thesis in computational mechanics.",
+                    "Managed an e-learning project to digitize course content and develop tools including virtual labs and inverted classroom formats."
                 ]
             },
             {
@@ -176,7 +178,7 @@
         "entries": [
             "Multi-Physics Simulation",
             "Numerical Methods",
-            "Engineering Materials",
+            "Scientific Computing",
             "Software Development",
             "Workflow Automation",
             "Project Management"
@@ -219,9 +221,9 @@
                     "Django",
                     "PostgreSQL",
                     "REST APIs",
-                    "Git",
                     "HTML",
-                    "CSS"
+                    "CSS",
+                    "Git"
                 ]
             }
         ]
@@ -307,10 +309,10 @@
             "para": "[PERSON],"
         },
         {
-            "para": "I hold a Ph.D. in Computational Mechanics with seven years of research experience in numerical methods and multi-physics simulation. Alongside my research work, I have developed practical skills in software development, workflow automation, and system integration, which I have applied in a production environment. I am currently expanding my expertise into machine learning and data-driven engineering."
+            "para": "I hold a Ph.D. in Computational Mechanics with seven years of research experience in numerical methods and multi-physics simulation, with a focus on functionally graded materials and fracture mechanics. Alongside my research work, I have developed practical skills in software development, workflow automation, and system integration, which I have applied in a production environment."
         },
         {
-            "para": "I am applying to [COMPANY] for the position of [LABEL]. My background spans numerical simulation and method development as well as hands-on software and automation work. The following points summarise my most relevant experience:"
+            "para": "I am applying to [COMPANY] for the position of [LABEL]. My background uniquely combines deep multi-physics simulation expertise with hands-on experience in data pipelines, API integration, and workflow automation — directly aligned with the growing demand for data-driven and AI-enhanced simulation environments. The following points summarise my most relevant experience:"
         },
         {
             "keyPoints": [
@@ -319,7 +321,7 @@
                 "I have contributed to four peer-reviewed journal publications and three conference papers through international research collaborations, and have presented my work at multiple conferences.",
                 "I taught master's-level courses in Structural Dynamics and Computer Languages for Engineers, supervised four student theses, and led a project to digitalise course content with interactive tools and virtual labs.",
                 "More recently, I designed and built an automation system at CleverBuy GmbH that runs continuous, rule-based workflows over large volumes of operational data, replacing extensive manual processes with reliable automated pipelines.",
-                "I am currently working on a natural language query interface for structured business and engineering data — an area where I see practical applications for my numerical and programming background."
+                "I am scoping an AI integration layer for structured business data — a concept I see extending naturally into simulation environments, where language model interfaces could enable intuitive querying of large-scale engineering datasets and simulation results."
             ]
         },
         {
