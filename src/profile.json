@@ -31,7 +31,7 @@
             {
                 "enabled": false,
                 "name": "Birthday",
-                "text": "10/03/1991",
+                "text": "10.03.1991",
                 "url": "",
                 "icon": "fa-solid fa-birthday-cake"
             }
@@ -82,7 +82,7 @@
         "enabled": true,
         "heading": "Profile",
         "entries": [
-            "Ph.D. in Computational Mechanics with seven years of research in numerical methods, multi-physics simulation, and fracture mechanics. Four peer-reviewed journal publications, international research collaboration, and multiple conference presentations. Complemented by hands-on industry experience in software development, data pipelines, API integration, workflow automation, and AI/ML integration."
+            "Ph.D. in Computational Mechanics with over six years of research in numerical methods, multi-physics simulation, and fracture mechanics. Four peer-reviewed journal publications, international research collaboration, and multiple conference presentations. Complemented by industry experience in software development, data pipelines, API integration, and workflow automation."
         ]
     },
     "work": {
@@ -115,7 +115,7 @@
                 "highlights": [
                     "Developed and implemented the Scaled Boundary Finite Element Method (SBFEM) in MATLAB to simulate thermoelastic fracture in specialized engineering materials.",
                     "Utilized ANSYS, Abaqus, Gmsh, and ParaView for advanced simulations, including scripting for automation and customization.",
-                    "Published four peer-reviewed papers in prestigious journals with over 138 cumulative citations.",
+                    "Published four peer-reviewed journal papers in Computer Methods in Applied Mechanics and Engineering, Engineering Fracture Mechanics, and Theoretical and Applied Fracture Mechanics.",
                     "Conducted research in collaboration with international institutions and presented research at multiple international conferences.",
                     "Taught graduate courses in Structural Dynamics and programming with ANSYS, Fortran, C++, and Python.",
                     "Supervised three master's and one bachelor's thesis in computational mechanics.",
@@ -257,7 +257,7 @@
                 "highlights": [
                     "Thesis: Design and analysis of motorcycle oil pump.",
                     "Project: Design, development, and manufacturing of Formula Student car.",
-                    "Grade: First Division (2.5)"
+                    "Grade: First Division"
                 ]
             }
         ]
@@ -309,7 +309,7 @@
             "para": "[PERSON],"
         },
         {
-            "para": "I hold a Ph.D. in Computational Mechanics with seven years of research experience in numerical methods and multi-physics simulation, with a focus on functionally graded materials and fracture mechanics. Alongside my research work, I have developed practical skills in software development, workflow automation, and system integration, which I have applied in a production environment."
+            "para": "I hold a Ph.D. in Computational Mechanics with over six years of research experience in numerical methods and multi-physics simulation, with a focus on functionally graded materials and fracture mechanics. Alongside my research work, I have developed practical skills in software development, workflow automation, and system integration, which I have applied in a production environment."
         },
         {
             "para": "I am applying to [COMPANY] for the position of [LABEL]. My background uniquely combines deep multi-physics simulation expertise with hands-on experience in data pipelines, API integration, and workflow automation — directly aligned with the growing demand for data-driven and AI-enhanced simulation environments. The following points summarise my most relevant experience:"
