@@ -17,7 +17,7 @@
             {
                 "enabled": false,
                 "name": "Phone",
-                "text": "+4917682044361",
+                "text": "+49 176 82044361",
                 "url": "",
                 "icon": "fa-solid fa-phone"
             },
@@ -44,35 +44,35 @@
             {
                 "enabled": false,
                 "name": "Website",
-                "text": "https://m-d-iqbal.github.io",
+                "text": "Website",
                 "url": "https://m-d-iqbal.github.io",
                 "icon": "fa-solid fa-globe fa-lg"
             },
             {
                 "enabled": true,
                 "name": "Linkedin",
-                "text": "https://linkedin.com/in/drdanishiqbal",
+                "text": "LinkedIn",
                 "url": "https://linkedin.com/in/drdanishiqbal",
                 "icon": "fa-brands fa-linkedin fa-lg"
             },
             {
                 "enabled": true,
                 "name": "Google Scholar",
-                "text": "https://scholar.google.de/citations?user=cxAW-3MAAAAJ",
+                "text": "Google Scholar",
                 "url": "https://scholar.google.de/citations?user=cxAW-3MAAAAJ",
                 "icon": "fa-brands fa-google fa-lg"
             },
             {
                 "enabled": true,
                 "name": "ResearchGate",
-                "text": "https://www.researchgate.net/profile/Danish-Iqbal-27",
+                "text": "ResearchGate",
                 "url": "https://www.researchgate.net/profile/Danish-Iqbal-27",
                 "icon": "fa-brands fa-researchgate fa-lg"
             },
             {
                 "enabled": true,
                 "name": "GitHub",
-                "text": "https://github.com/M-D-Iqbal",
+                "text": "GitHub",
                 "url": "https://github.com/M-D-Iqbal",
                 "icon": "fa-brands fa-github fa-lg"
             }
