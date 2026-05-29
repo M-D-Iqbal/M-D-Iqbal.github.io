@@ -86,17 +86,37 @@ function renderAbout(container, data) {
 
 function renderWork(container, data) {
     const w = data.work;
-    const entries = w.entries.map(e => `
+    const workEntries = w.entries.map(e => `
         <h2>${e.title}${e.org ? ' | ' + e.org : ''}</h2>
         <h3><i>${e.date}</i></h3>
         <ul class="section-list">
             ${e.highlights.map(h => `<li>${h}</li>`).join('')}
         </ul>`).join('');
 
+    let projectsBlock = '';
+    const p = data.projects;
+    if (p && p.enabled && p.entries && p.entries.length) {
+        const projectEntries = p.entries.map(e => {
+            const titleHtml = e.url
+                ? `<a href="${e.url}">${e.title}</a>`
+                : e.title;
+            return `
+                <h2>${titleHtml}${e.org ? ' | ' + e.org : ''}</h2>
+                ${e.date ? `<h3><i>${e.date}</i></h3>` : ''}
+                <ul class="section-list">
+                    ${e.highlights.map(h => `<li>${h}</li>`).join('')}
+                </ul>`;
+        }).join('');
+        projectsBlock = `
+            <h1>${p.heading}</h1>
+            ${projectEntries}`;
+    }
+
     container.innerHTML = `
         <section class="work">
             <h1>${w.heading}</h1>
-            ${entries}
+            ${workEntries}
+            ${projectsBlock}
         </section>`;
 }
 

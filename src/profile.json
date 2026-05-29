@@ -30,6 +30,13 @@
             },
             {
                 "enabled": false,
+                "name": "Residence",
+                "text": "Niederlassungserlaubnis",
+                "url": "",
+                "icon": "fa-solid fa-id-card"
+            },
+            {
+                "enabled": false,
                 "name": "Birthday",
                 "text": "10.03.1991",
                 "url": "",
@@ -42,39 +49,39 @@
         "heading": "",
         "entries": [
             {
-                "enabled": false,
+                "enabled": true,
                 "name": "Website",
-                "text": "Website",
+                "text": "m-d-iqbal.github.io",
                 "url": "https://m-d-iqbal.github.io",
                 "icon": "fa-solid fa-globe fa-lg"
             },
             {
                 "enabled": true,
                 "name": "Linkedin",
-                "text": "LinkedIn",
+                "text": "linkedin.com/in/drdanishiqbal",
                 "url": "https://linkedin.com/in/drdanishiqbal",
                 "icon": "fa-brands fa-linkedin fa-lg"
             },
             {
                 "enabled": true,
                 "name": "Google Scholar",
-                "text": "Google Scholar",
+                "text": "scholar.google.de/citations?user=cxAW-3MAAAAJ",
                 "url": "https://scholar.google.de/citations?user=cxAW-3MAAAAJ",
                 "icon": "fa-brands fa-google fa-lg"
             },
             {
                 "enabled": true,
-                "name": "ResearchGate",
-                "text": "ResearchGate",
-                "url": "https://www.researchgate.net/profile/Danish-Iqbal-27",
-                "icon": "fa-brands fa-researchgate fa-lg"
-            },
-            {
-                "enabled": true,
                 "name": "GitHub",
-                "text": "GitHub",
+                "text": "github.com/M-D-Iqbal",
                 "url": "https://github.com/M-D-Iqbal",
                 "icon": "fa-brands fa-github fa-lg"
+            },
+            {
+                "enabled": false,
+                "name": "ResearchGate",
+                "text": "researchgate.net/profile/Danish-Iqbal-27",
+                "url": "https://www.researchgate.net/profile/Danish-Iqbal-27",
+                "icon": "fa-brands fa-researchgate fa-lg"
             }
         ]
     },
@@ -82,7 +89,7 @@
         "enabled": true,
         "heading": "Profile",
         "entries": [
-            "Ph.D. in Computational Mechanics with over six years of research in numerical methods, multi-physics simulation, and fracture mechanics. Four peer-reviewed journal publications, international research collaboration, and multiple conference presentations. Complemented by industry experience in software development, data pipelines, API integration, and workflow automation."
+            "Dr.-Ing. in Computational Mechanics with seven years of research in numerical methods, multi-physics simulation, and fracture mechanics. Hands-on experience developing custom numerical methods and using commercial FEM simulation software, four peer-reviewed journal publications with over 135 citations, and international research collaboration. Complemented by industry experience in production software development, workflow automation, and applied AI integration."
         ]
     },
     "work": {
@@ -90,79 +97,85 @@
         "heading": "Professional Experience",
         "entries": [
             {
+                "enabled": true,
                 "title": "Software Engineer",
                 "org": "CleverBuy GmbH, Krefeld, Germany",
                 "date": "07/2025 - present",
                 "highlights": [
-                    "Developed automation systems replacing manual workflows with real-time, automated processes across multiple connected business systems.",
-                    "Built large-scale data pipelines integrating third-party platforms via APIs for continuous, automated data exchange and processing.",
-                    "Designed and implemented an asynchronous job engine using Celery for continuous rule-based evaluation over large volumes of operational data.",
-                    "Scoping an AI integration layer to connect a language model to structured business data for natural language querying and insights."
+                    "Architected and shipped a pricing platform for 30,000+ refurbished-electronics SKUs on Refurbed and Back Market, handling both sell-side listings and buyback offers, with a monitoring and override dashboard that cut the operations lead's manual pricing work by 80%.",
+                    "Designed the PostgreSQL service-layer schema on top of the company's JTL-Wawi ERP and built a 24/7 priority-based asynchronous pipeline that reprices the catalogue under explicit margin and grade-tier rules.",
+                    "Integrated Refurbed and Back Market REST APIs and the Anthropic Claude API for LLM-supported grade and pricing decisions, with automated SKU onboarding and product-image processing for the company storefront."
                 ]
             },
             {
+                "enabled": false,
                 "title": "Professional Development",
                 "org": "",
                 "date": "08/2024 - 06/2025",
                 "highlights": [
-                    "Pursued self-directed learning in full-stack development, data science, and machine learning as part of a deliberate transition from academic research into industry engineering roles."
+                    "Structured self-study in machine learning, deep learning, and data science."
                 ]
             },
             {
+                "enabled": true,
                 "title": "Research Assistant",
                 "org": "University of Duisburg-Essen, Essen, Germany",
                 "date": "08/2017 - 03/2024",
                 "highlights": [
-                    "Developed and implemented the Scaled Boundary Finite Element Method (SBFEM) in MATLAB to simulate thermoelastic fracture in specialized engineering materials.",
-                    "Utilized ANSYS, Abaqus, Gmsh, and ParaView for advanced simulations, including scripting for automation and customization.",
-                    "Published four peer-reviewed journal papers in Computer Methods in Applied Mechanics and Engineering, Engineering Fracture Mechanics, and Theoretical and Applied Fracture Mechanics.",
-                    "Conducted research in collaboration with international institutions and presented research at multiple international conferences.",
-                    "Taught graduate courses in Structural Dynamics and programming with ANSYS, Fortran, C++, and Python.",
-                    "Supervised three master's and one bachelor's thesis in computational mechanics.",
-                    "Managed an e-learning project to digitize course content and develop tools including virtual labs and inverted classroom formats."
+                    "Developed a novel polygon-based SBFEM formulation for transient thermoelastic fracture in functionally graded materials, implemented in object-oriented MATLAB and validated against commercial FEM software.",
+                    "Published four peer-reviewed journal papers with over 135 citations in top computational- and fracture-mechanics journals; peer reviewer for an international journal.",
+                    "Designed and delivered a master's-level Structural Dynamics course in ANSYS on a university e-learning grant, including a custom interactive simulation lab for hands-on structural-dynamics teaching.",
+                    "Taught a master's-level Computer Languages for Engineers course in object-oriented Fortran and C++ with numerical-methods term projects.",
+                    "Supervised three master's and one bachelor's thesis in computational mechanics and CFD."
                 ]
             },
             {
+                "enabled": true,
                 "title": "Visiting Researcher",
                 "org": "Federation University, Ballarat, Australia",
                 "date": "01/2020 - 03/2020",
                 "highlights": [
-                    "Collaborated with the University of Duisburg-Essen and Federation University under a prestigious Australia-Germany research grant, advancing SBFEM for modeling thermoelastic fracture in specialized engineering materials."
+                    "Australia-Germany research cooperation (Federation University, DAAD) on polygon SBFEM for coupled thermoelastic fracture in functionally graded materials."
                 ]
             },
             {
-                "title": "Student Assistant",
+                "enabled": true,
+                "title": "Student Research Assistant",
                 "org": "University of Duisburg-Essen, Essen, Germany",
                 "date": "01/2017 - 03/2017",
                 "highlights": [
-                    "Implemented a polygon-based SBFEM in FORTRAN and integrated it into the open-source software FEAPpv."
+                    "Implemented a polygon-based SBFEM in Fortran and integrated it into the open-source FE code FEAPpv."
                 ]
             },
             {
-                "title": "Student Worker",
+                "enabled": true,
+                "title": "Seasonal Worker (Assembly Line)",
                 "org": "Mercedes-Benz Group AG, Düsseldorf, Germany",
                 "date": "06/2015 - 10/2015",
                 "highlights": [
-                    "Executed spot welding with jigs and performed automotive assembly line tasks."
+                    "Spot welding with jigs and automotive assembly-line work."
                 ]
             },
             {
-                "title": "Student Worker",
+                "enabled": true,
+                "title": "Seasonal Worker (Assembly Line)",
                 "org": "Mercedes-Benz Group AG, Rastatt, Germany",
                 "date": "10/2014 - 12/2014",
                 "highlights": [
-                    "Carried out production tasks on automotive assembly line."
+                    "Production tasks on automotive assembly line."
                 ]
             },
             {
-                "title": "Logistics Assistant",
+                "enabled": true,
+                "title": "Seasonal Worker (Logistics)",
                 "org": "Amazon Deutschland Services GmbH, Rheinberg, Germany",
                 "date": "12/2013 - 12/2013",
                 "highlights": [
-                    "Scanned items and prepared them for packaging."
+                    "Warehouse scanning and packaging preparation."
                 ]
             },
             {
+                "enabled": true,
                 "title": "Internship",
                 "org": "Karachi Tools, Dies & Moulds Center, Karachi, Pakistan",
                 "date": "06/2011 - 07/2011",
@@ -172,15 +185,54 @@
             }
         ]
     },
+    "projects": {
+        "enabled": true,
+        "heading": "Personal Projects",
+        "entries": [
+            {
+                "enabled": true,
+                "title": "sahab.pk — AI-Powered Ledger SaaS",
+                "org": "Founder & architect — live alpha",
+                "date": "",
+                "url": "https://sahab.pk",
+                "highlights": [
+                    "Multi-tenant SaaS for retailers in Pakistan: shopkeepers chat in Urdu or English; an LLM extracts structured events into a double-entry ledger with row-level tenant isolation."
+                ]
+            },
+            {
+                "enabled": true,
+                "title": "Free-Body Diagram Toolkit — Teaching Aid",
+                "org": "Developer & maintainer — open source",
+                "date": "",
+                "url": "https://github.com/M-D-Iqbal/Free-Body-Diagram-Toolkit",
+                "highlights": [
+                    "MATLAB code used in own Ph.D. thesis and in graduate Structural Dynamics tutorials, assignments, and exams at the University of Duisburg-Essen."
+                ]
+            },
+            {
+                "enabled": true,
+                "title": "Formula Student Race Car — Carbon-Fiber Monocoque",
+                "org": "Undergraduate team project — NED University, Karachi",
+                "date": "",
+                "url": "",
+                "highlights": [
+                    "Designed to Formula Student Spain competition specification: carbon-fiber monocoque in Siemens NX with CFRP/honeycomb sandwich construction, panel strength testing passed; prior ANSYS structural analysis on the predecessor space-frame chassis."
+                ]
+            }
+        ]
+    },
     "expertise": {
         "enabled": true,
         "heading": "Core Competencies",
         "entries": [
-            "Multi-Physics Simulation",
+            "Computational Mechanics",
             "Numerical Methods",
-            "Scientific Computing",
+            "Finite Element Analysis",
+            "Multi-Physics Simulation",
+            "Fracture Mechanics",
             "Software Development",
-            "Workflow Automation",
+            "Applied AI Integration",
+            "Data Pipelines & ETL",
             "Project Management"
         ]
     },
@@ -189,42 +241,34 @@
         "heading": "Skills",
         "entries": [
             {
+                "enabled": true,
                 "title": "Numerical Methods:",
-                "highlights": [
-                    "SBFEM",
-                    "FEM",
-                    "XFEM",
-                    "CFD"
-                ]
+                "highlights": ["FEM", "SBFEM", "XFEM", "CFD"]
             },
             {
+                "enabled": true,
                 "title": "Simulation Tools:",
-                "highlights": [
-                    "ANSYS",
-                    "Abaqus",
-                    "Gmsh",
-                    "ParaView"
-                ]
+                "highlights": ["ANSYS", "Abaqus", "Gmsh", "ParaView"]
             },
             {
+                "enabled": true,
                 "title": "Programming:",
-                "highlights": [
-                    "MATLAB",
-                    "Python",
-                    "Fortran",
-                    "C++"
-                ]
+                "highlights": ["MATLAB", "Python", "Fortran", "C++"]
             },
             {
-                "title": "Dev. Stack:",
-                "highlights": [
-                    "Django",
-                    "PostgreSQL",
-                    "REST APIs",
-                    "HTML",
-                    "CSS",
-                    "Git"
-                ]
+                "enabled": true,
+                "title": "Backend & Data:",
+                "highlights": ["Django", "PostgreSQL", "Celery", "REST APIs"]
+            },
+            {
+                "enabled": true,
+                "title": "Applied AI:",
+                "highlights": ["Claude API", "Gemini", "Groq", "Prompt engineering"]
+            },
+            {
+                "enabled": false,
+                "title": "Web & Mobile:",
+                "highlights": ["Vue", "SvelteKit", "Flutter", "OpenAPI"]
             }
         ]
     },
@@ -233,7 +277,8 @@
         "heading": "Education",
         "entries": [
             {
-                "title": "Ph.D. Computational Mechanics",
+                "enabled": true,
+                "title": "Ph.D. (Dr.-Ing.) Computational Mechanics",
                 "org": "University of Duisburg-Essen, Germany",
                 "date": "08/2017 - 07/2024",
                 "highlights": [
@@ -242,6 +287,7 @@
                 ]
             },
             {
+                "enabled": true,
                 "title": "M.Sc. Computational Mechanics",
                 "org": "University of Duisburg-Essen, Germany",
                 "date": "10/2013 - 07/2017",
@@ -251,15 +297,24 @@
                 ]
             },
             {
+                "enabled": true,
                 "title": "B.E. Automotive Engineering",
-                "org": "NED University of Engineering & Technology, Pakistan",
+                "org": "NED University of Engineering & Technology, Karachi, Pakistan",
                 "date": "01/2009 - 12/2012",
                 "highlights": [
                     "Thesis: Design and analysis of motorcycle oil pump.",
-                    "Project: Design, development, and manufacturing of Formula Student car.",
                     "Grade: First Division"
                 ]
             }
+        ]
+    },
+    "languages": {
+        "enabled": true,
+        "heading": "Languages",
+        "entries": [
+            "Urdu (native)",
+            "English (C2)",
+            "German (fluent, B2)"
         ]
     },
     "publications": {
@@ -270,65 +325,17 @@
             "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.tafmec.2023.104056\">\"Transient thermoelastic fracture analysis of functionally graded materials using the scaled boundary finite element method.\"</a> Theoretical and Applied Fracture Mechanics, vol. 127, Oct. 2023, p. 104056.",
             "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2022.108305\">\"Thermoelastic fracture analysis of functionally graded materials using the scaled boundary finite element method.\"</a> Engineering Fracture Mechanics, vol. 264, Apr. 2022, p. 108305.",
             "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.cma.2021.114106\">\"Development of the scaled boundary finite element method for crack propagation modeling of elastic solids subjected to coupled thermo-mechanical loads.\"</a> Computer Methods in Applied Mechanics and Engineering, vol. 387, Dec. 2021, p. 114106.",
-            "E.T. Ooi, <i> M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2020.107300\">\"A polygon scaled boundary finite element formulation for transient coupled thermoelastic fracture problems.\"</a> Engineering Fracture Mechanics, vol. 240, Dec. 2020, p. 107300.",
-            "<h3>Conference Papers</h3> ",
-            "C. Birk, R. Assaf, <i>M. D. Iqbal</i>, H. Gravenkamp, <a>\"Numerische strukturmodellierung mit polygon-elementen.\"</a> Baustatik-Baupraxis 15 (2024).",
-            "<i>M. D. Iqbal</i>, et al.,  <a href=\"https://doi.org/10.1002/pamm.201900109\">\"Scaled boundary finite element modelling of thermally induced crack propagation.\"</a> Proceedings in Applied Mathematics and Mechanics 19 (2019).",
-            "<i>M. D. Iqbal</i>, C. Birk, <a href=\"https://doi.org/10.1007/978-3-658-23627-4_13\">\"Numerical modelling of thermally induced crack propagation in functionally graded materials using the scaled boundary finite element method.\"</a> Forschungskolloquium 2018 Grasellenbach (2018).",
-            "<h3>Theses</h3>",
-            "<i>M. D. Iqbal</i>, <a href=\"https://doi.org/10.17185/duepublico/82324\">\"Development of scaled boundary polygon elements for coupled thermoelastic fracture modeling.\"</a> PhD Thesis, University of Duisburg-Essen (2024).",
-            "<i>M. D. Iqbal</i>, \"Development of polygon elements based on the scaled boundary finite element method.\" Master Thesis, University of Duisburg-Essen (2017)."
-            
+            "E.T. Ooi, <i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1016/j.engfracmech.2020.107300\">\"A polygon scaled boundary finite element formulation for transient coupled thermoelastic fracture problems.\"</a> Engineering Fracture Mechanics, vol. 240, Dec. 2020, p. 107300.",
+            "<h3>Peer-Reviewed Conference Papers</h3>",
+            "C. Birk, R. Assaf, <i>M. D. Iqbal</i>, H. Gravenkamp. \"Numerische Strukturmodellierung mit Polygon-Elementen.\" Baustatik-Baupraxis 15, 2024.",
+            "<i>M. D. Iqbal</i>, et al. <a href=\"https://doi.org/10.1002/pamm.201900109\">\"Scaled boundary finite element modelling of thermally induced crack propagation.\"</a> Proceedings in Applied Mathematics and Mechanics (PAMM) 19, 2019.",
+            "<h3>Conference Presentations</h3>",
+            "<i>M. D. Iqbal</i>, et al. \"Scaled boundary polygon element formulation for coupled thermoelastic fracture in FGMs.\" GACM Colloquium on Computational Mechanics, 2022.",
+            "<i>M. D. Iqbal</i>, et al. \"Polygon SBFEM for transient coupled thermoelastic fracture.\" 14th World Congress on Computational Mechanics (WCCM XIV), 2020 (virtual).",
+            "<i>M. D. Iqbal</i>, et al. \"Scaled boundary finite element modelling of thermally induced crack propagation.\" 90th GAMM Annual Meeting, 2019.",
+            "<i>M. D. Iqbal</i>, C. Birk. <a href=\"https://doi.org/10.1007/978-3-658-23627-4_13\">\"Numerical modelling of thermally induced crack propagation in functionally graded materials using the scaled boundary finite element method.\"</a> Forschungskolloquium Baustatik-Baupraxis, Grasellenbach, 2018.",
+            "<h3>Peer Review</h3>",
+            "Reviewer, <i>International Journal of Non-Linear Mechanics</i> — \"Thermally nonlinear analysis of propagating cracks under generalized thermal shock\"."
         ]
-    },
-    "languages": {
-        "enabled": true,
-        "heading": "Languages",
-        "entries": [
-            "Urdu (native)",
-            "English (business fluent)",
-            "German (fluent)"
-        ]
-    },
-    "city": "Essen",
-    "sign": "sign.png",
-    "subject": "Application for the position of [LABEL] [JOBREF]",
-    "company": {
-        "enabled": true,
-        "heading": "",
-        "entries": [
-            "XYZ",
-            "XYZ Gmbh",
-            "ABC 123",
-            "3456, IJK",
-            "Land"
-        ]
-    },
-    "content": [
-        {
-            "para": "[PERSON],"
-        },
-        {
-            "para": "I hold a Ph.D. in Computational Mechanics with over six years of research experience in numerical methods and multi-physics simulation, with a focus on functionally graded materials and fracture mechanics. Alongside my research work, I have developed practical skills in software development, workflow automation, and system integration, which I have applied in a production environment."
-        },
-        {
-            "para": "I am applying to [COMPANY] for the position of [LABEL]. My background uniquely combines deep multi-physics simulation expertise with hands-on experience in data pipelines, API integration, and workflow automation — directly aligned with the growing demand for data-driven and AI-enhanced simulation environments. The following points summarise my most relevant experience:"
-        },
-        {
-            "keyPoints": [
-                "For my Ph.D., I developed and implemented the Scaled Boundary Finite Element Method (SBFEM) in MATLAB to analyse fracture behaviour in engineered materials under coupled thermal and mechanical loads, graduating with magna cum laude distinction.",
-                "I have solid experience with numerical methods including FEM and CFD, and hands-on proficiency with simulation tools such as ANSYS, Abaqus, and FEAP, including scripting and batch automation.",
-                "I have contributed to four peer-reviewed journal publications and three conference papers through international research collaborations, and have presented my work at multiple conferences.",
-                "I taught master's-level courses in Structural Dynamics and Computer Languages for Engineers, supervised four student theses, and led a project to digitalise course content with interactive tools and virtual labs.",
-                "More recently, I designed and built an automation system at CleverBuy GmbH that runs continuous, rule-based workflows over large volumes of operational data, replacing extensive manual processes with reliable automated pipelines.",
-                "I am scoping an AI integration layer for structured business data — a concept I see extending naturally into simulation environments, where language model interfaces could enable intuitive querying of large-scale engineering datasets and simulation results."
-            ]
-        },
-        {
-            "para": "I believe my combination of research depth and practical engineering experience is a good fit for the [LABEL] role at [COMPANY]. I would be happy to discuss my application in more detail at your convenience."
-        },
-        {
-            "para": "Sincerely,"
-        }
-    ]
+    }
 }
